@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta and Title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIVEK PORTFOLIO</title>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            background-color: #7ebaf6;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+        }
+        /* Navigation Styles */
+        nav {
+            background-color:#0381ff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10000;
+        }
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #060606;
+        }
+        .nav-links ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links ul li {
+            margin-left: 1px;
+        }
+        .nav-links ul li a {
+            font-size: 18px;
+            padding: 8px 12px;
+            border-radius: 200px;
+            transition: background-color 0.3s;
+        }
+        .nav-links ul li a:hover {
+            background-color: #575757;
+            color: #f4f3f3;
+        }
+        /* Menu Toggle (Mobile) */
+        .menu-toggle {
+            display: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        /* Sections Styles */
+        .section {
+            display: none;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* Home Section */
+        #homeContent {
+            display: block;
+            text-align: center;
+        }
+        #homeContent h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #070707;
+        }
+        #homeContent span {
+            color: #9333ea;
+            font-weight: bold;
+        }
+        /* Welcome Message */
+        .welcome-message h2 {
+            font-size: 35px;
+            color: #4505f6;
+            margin-bottom: 10px;
+        }
+        .welcome-message p {
+            font-size: 20px;
+            color: #070707;
+        }
+        /* Specialties */
+        .specialties h2 {
+            font-size: 35px;
+            color: #9333ea;
+            margin-bottom: 20px;
+        }
+        .specialties ol {
+            list-style: disc inside;
+            font-size: 20px;
+            color: #070707;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 400px;
+            text-align: left;
+        }
+        /* Thought Section */
+        .thought h2 {
+            font-size: 35px;
+            color: #4505f6;
+            margin-bottom: 10px;
+        }
+        .thought p {
+            font-size: 20px;
+            color: #070707;
+            font-style: italic;
+        }
+        /* About Section */
+        #about .section-content {
+            background-color: #f2f2f2;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #about h2 {
+            text-align: center;
+            font-size: 35px;
+            color: #4505f6;
+            margin-bottom: 30px;
+        }
+        #about .section-content h3 {
+            font-size: 25px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        #about .section-content p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        /* Skills Section */
+        #skills .section-content {
+            background-color: #f2f2f2;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #skills h2 {
+            text-align: center;
+            font-size: 35px;
+            color: #4505f6;
+            margin-bottom: 30px;
+        }
+        #skills .skills-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        #skills .skills-column {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+        #skills .skills-column h3 {
+            font-size: 25px;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        
+        /* Contact Section */
+        #contact .section-content {
+            background-color: #f2f2f2;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        #contact h2 {
+            text-align: center;
+            font-size: 35px;
+            color: #4505f6;
+            margin-bottom: 30px;
+        }
+        #contact form label {
+            display: block;
+            font-size: 18px;
+            color: #0a0a0a;
+            margin-bottom: 5px;
+        }
+        #contact form input,
+        #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #contact form input[type="submit"] {
+            background-color: #4505f6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #contact form input[type="submit"]:hover {
+            background-color: #3a04d1;
+        }
+        #contact form input[type="Reset"] {
+            background-color: #4505f6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #contact form input[type="Reset"]:hover {
+            background-color: #3a04d1;
+        }
+        .social-menu {
+    text-align: center;
+    padding: 20px 0;
+     /* Background color of the menu */
+}
+
+.social-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-menu ul li {
+    margin: 0 10px; /* Space between icons */
+}
+
+.social-menu ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #444; /* Background color of the icons */
+    color: #fff;
+    font-size: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-menu ul li a:hover {
+    background-color: #555;  /* Color on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.social-menu ul li a i {
+    display: inline-block;
+    vertical-align: middle;
+}
+/* Basic CSS for the image */
+/* Default (Light Mode) Styles */
+
+
+
+
+
+        /* Dark Mode Styles */
+       /* Dark Mode Styles */
+.dark-mode {
+    background-color: #111827; /* True black background */
+    color: #fefdfd; /* White text color */
+}
+
+/* Dark Mode for Navigation */
+.dark-mode nav {
+    background-color: #b8b8f8; /* Slightly lighter black for contrast */
+}
+
+.dark-mode .nav-links ul li a {
+    color: #070707; /* White text color for navigation links */
+}
+
+.dark-mode .nav-links ul li a:hover {
+    background-color: #42484b; /* Lighter black for hover effect */
+    color: #f4f3f3;
+}
+
+/* Dark Mode for Sections */
+.dark-mode .section-content {
+    background-color: #111111; /* Slightly lighter black for section backgrounds */
+    color: #ffffff; /* White text color for section content */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.447); /* Soft white shadow */
+}
+
+/* Dark Mode for Home Section */
+.dark-mode #homeContent h1 {
+    color: #fefdfd; /* Near white for headings */
+}
+
+.dark-mode #homeContent span {
+    color: #9333ea; /* Bright color for highlighted text */
+}
+
+.dark-mode .welcome-message h2 {
+    color: #4505f6; /* Bright color for welcome message */
+}
+
+.dark-mode .welcome-message p {
+    color: #fefdfd; /* Near white for welcome message text */
+}
+
+/* Dark Mode for Specialties Section */
+.dark-mode .specialties h2 {
+    color: #9333ea; /* Bright color for specialties heading */
+}
+
+.dark-mode .specialties ol {
+    color: #f3f1f1; /* Near white for list items */
+}
+
+/* Dark Mode for Thought Section */
+.dark-mode .thought h2 {
+    color: #9333ea; /* Bright color for thought heading */
+}
+
+.dark-mode .thought p {
+    color: #fefcfc; /* Near white for thought text */
+    font-style: italic; /* Keep the italic style */
+}
+
+/* Dark Mode for About Section */
+.dark-mode #about h2 {
+    color: #9333ea; /* Bright color for about heading */
+}
+
+.dark-mode #about .section-content h3 {
+    color: #9333ea; /* White text color for subheadings */
+}
+
+.dark-mode #about .section-content p {
+    color: #050505; /* Near white for paragraph text */
+}
+
+/* Dark Mode for Skills Section */
+.dark-mode #skills h2 {
+    color: #9333ea; /* Bright color for skills heading */
+}
+
+.dark-mode #skills .skills-column h3 {
+    color: #9333ea; /* White text color for skills subheadings */
+}
+
+.dark-mode #skills .skills-column ol li {
+    color: #070707; /* Near white for list items */
+}
+
+/* Dark Mode for Portfolio Section */
+.dark-mode #portfolio h2 {
+    color: #0056b3; /* Bright color for portfolio heading */
+}
+
+.dark-mode #portfolio .section-content p {
+    color: #fbf9f9; /* Near white for portfolio content */
+}
+
+/* Dark Mode for Contact Section */
+.dark-mode #contact h2 {
+    color: #9333ea; /* Bright color for contact heading */
+}
+
+.dark-mode #contact .section-content {
+    background-color: #111111; /* Slightly lighter black for contact section background */
+}
+
+.dark-mode #contact form label {
+    color: #ffffff; /* White text color for form labels */
+}
+
+.dark-mode #contact form input,
+.dark-mode #contact form textarea {
+    background-color: #222222; /* Lighter black for input fields */
+    color: #ffffff; /* White text color for input fields */
+    border-color: #333333; /* Slightly lighter border */
+}
+
+.dark-mode #contact form input[type="submit"] {
+    background-color: #4505f6; /* Purple background for submit button */
+    color: #ffffff; /* White text color for submit button */
+}
+
+.dark-mode #contact form input[type="submit"]:hover {
+    background-color: #3a04d1; /* Slightly darker purple on hover */
+}
+.dark-mode #contact form input[type="Reset"] {
+    background-color: #4505f6; /* Purple background for submit button */
+    color: #ffffff; /* White text color for submit button */
+}
+.dark-mode #contact form input[type="Reset"]:hover {
+    background-color: #3a04d1; /* Slightly darker purple on hover */
+}
+.dark-mode #skills .section-content {
+    background-color: #222222;
+    color: #ffffff;
+}
+.dark-mode #about .section-content {
+    background-color: #222222;
+    color: #ffffff;
+}
+.dark-mode #about .section-content p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 20px;
+} 
+.dark-mode .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #060606;
+}
+#github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    /*padding: 10px;
+    /*background-color: #f5f5f5;  Light gray background */
+    /*border-radius: 8px; /* Rounded corners */
+    /*width: 50px;
+    height: 50px;
+    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+}
+
+#github img {
+    width: 200%;
+    height: auto;
+    max-width: 80px; /* Ensure the icon isn't too large */
+    max-height: 80px;
+}
+/* General Section Styling */
+/* General Section Styling */
+#portfolio {
+    padding: 50px 20px; /* Adds padding inside the section for spacing */
+    background-color: #f4f4f4; /* Light grey background color for the section */
+    border-radius: 8px; /* Rounds the corners of the section */
+    margin: auto; /* Centers the section horizontally */
+    text-align: center; /* Centers all text elements within the section */
+    max-width: 600px; /* Sets a maximum width for the section */
+    position: absolute; /* Positions the section absolutely */
+    top: 50%; /* Moves the section down to 50% of the viewport height */
+    left: 50%; /* Moves the section to 50% of the viewport width */
+    transform: translate(-50%, -50%); /* Centers the section vertically and horizontally */
+}
+
+/* Heading Styling */
+#portfolio h2 {
+    font-size: 28px; /* Sets the font size of the heading text */
+    color: #333; /* Dark grey color for the heading text */
+    margin-bottom: 20px; /* Adds space below the heading */
+    font-weight: 600; /* Makes the heading text semi-bold */
+}
+
+/* Link Styling */
+#portfolio a {
+    display: inline-block; /* Makes the link behave like an inline element, allowing it to be centered */
+    font-size: 18px; /* Sets the font size for the link text */
+    color: #007BFF; /* Blue color for the link text */
+    text-decoration: none; /* Removes the underline from the link */
+    margin: 10px 0; /* Adds vertical spacing between the link and other elements */
+    padding: 10px 15px; /* Adds padding around the link text */
+    background-color: #e7f3ff; /* Light blue background color for the link */
+    border-radius: 5px; /* Rounds the corners of the link */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect when hovering over the link */
+}
+
+/* Hover Effect for Link */
+#portfolio a:hover {
+    background-color: #0056b3; /* Changes the background color to darker blue when hovered */
+    color: #fff; /* Changes the text color to white when hovered */
+}
+
+/* Paragraph Styling */
+#portfolio .section-content p {
+    font-size: 16px; /* Sets the font size for the paragraph text */
+    color: #666; /* Medium grey color for the paragraph text */
+    margin-top: 15px; /* Adds space above the paragraph */
+    font-style: italic; /* Makes the paragraph text italic */
+}
+
+/* Dark Mode Styling */
+.dark-mode #portfolio {
+    background-color: #fdfcfc; /* Dark grey background for the section */
+    color: #070707; /* Light grey text color for the section */
+}
+
+.dark-mode #portfolio h2 {
+    color: #040404; /* Light grey color for the heading text */
+}
+
+.dark-mode #portfolio a {
+    color: #1e90ff; /* Lighter blue color for the link text */
+    background-color: #030303; /* Darker grey background for the link */
+}
+
+.dark-mode #portfolio a:hover {
+    background-color: #0056b3; /* Keeps the hover background color the same */
+    color: #fff; /* Keeps the hover text color the same */
+}
+/* Styling for the image */
+#homeContent img {
+    max-width: 150px; /* Limits the width of the image */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid #1404f8; /* Adds a border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    margin: 20px auto; /* Centers the image horizontally and adds vertical spacing */
+    display: block; /* Ensures the image behaves as a block-level element */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #homeContent img {
+        max-width: 100px; /* Adjust image size for smaller screens */
+    }
+
+    #homeContent h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    #homeContent h2 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    #homeContent h4 {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+}
+/* Container for the images */
+#github {
+    display: flex;
+    justify-content: center; /* Center-aligns items horizontally */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    padding: 20px; /* Adds padding around the container */
+    /*background-color: #757171;  Light background color for contrast */
+}
+
+/* Style for the images */
+#github img {
+    width: 60px; /* Adjust size as needed */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 5px; /* Space between images */
+    border-radius: 8px; /* Adds slight rounding to the corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+/* Hover effect for images */
+#github img:hover {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+}
+
+/* Link styling */
+/*body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.menu.dark-mode {
+    background-color: #222;
+}
+
+.toggle-button {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.navbar-links li {
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links i {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+#darkModeToggle {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background-color: #444;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        text-align: center;
+        width: 100%;
+        padding: 15px 0;
+        margin: 5px 0;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+}
+
+.navbar-links.active {
+    display: flex;
+}
+   
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark-mode {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #333;
+        padding: 10px;
+        transition: background-color 0.3s;
+    }
+
+    nav.dark-mode {
+        background-color: #222;
+    }
+
+    .logo {
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .menu-toggle {
+        display: none;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-links ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-links li {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-links i {
+        font-size: 20px;
+        margin-right: 8px;
+    }*/
+
+    #darkModeToggle {
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 200px;
+            background-color: #cfc9c9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-links ul {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .nav-links li {
+            text-align: center;
+            width: 100%;
+            padding: 15px 0;
+            margin: 5px 0;
+        }
+
+        .menu-toggle {
+            display: flex;
+        }
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .section {
+        padding: 60px;
+        min-height: 100vh;
+    }
+/* Navbar styles */
+
+
+
+
+
+    </style>
+</head>
+<body>
+      <!-- Navigation -->
+      <nav>
+        <div class="logo">
+            <span style="color: #040404;">&lt;/ VIVEK</span> PORTFOLIO &gt; <span style="color: #04f845;"></span>
+        </div>
+        <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+        <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a onclick="showSection('homeContent')"><i class="fas fa-home"></i></a></li>
+                <li><a onclick="showSection('about')">ABOUT</a></li>
+                <li><a onclick="showSection('skills')">SKILLS</a></li>
+                <li><a onclick="showSection('contact')">CONTACT</a></li>
+                <li><a id="darkModeToggle"><i class="fas fa-moon"></i></a></li>
+            </ul>
+        </div>
+      </nav>
+
+    <!-- Home Section -->
+    <div id="homeContent" class="section">
+        <h1><span style="color: #9333ea;">HELLO,👋</span> IT'S VIVEK SAWJI</h1>
+        <img src="teacher-man-avatar-icon-illustration-vector-style_131965-958.avif" alt="Avatar">
+        <h2>I AM A <span id="role">PYTHON DEVELOPER...!</span></h2><BR>
+            
+            
+
+        <div class="welcome-message">
+            <h2>WELCOME TO MY PORTFOLIO!</h2>
+            <H4>
+            <p>~"I'm passionate about turning ideas into reality through code".
+               Let's build something amazing together!~</p>
+            </H4>
+        </div><br>
+        <div class="specialties">
+            <h2>MY SPECIALTIES</h2>
+            <div id="github">
+                <img src="python-svgrepo-com.svg" alt="python">
+                <img src="java-4-logo-svgrepo-com.svg" alt="java">
+                <img src="c-logo-svgrepo-com.svg" alt="c++">
+                <img src="html-5-logo-svgrepo-com.svg" alt="html">
+                <img src="css3-logo-svgrepo-com.svg" alt="css">
+                <img src="javascript-logo-svgrepo-com.svg" alt="javascript">
+                <img src="mysql-logo-svgrepo-com.svg" alt="sql">
+            </div>
+       
+        
+        </div>
+        <div class="thought">
+            
+            <p>"Code islike humor. When you have to explain it, it’s bad." </p>
+                                                <P>- Cory House</p><BR>
+        </div>
+        <DIV>
+            <p>&copy; 2024 Vivek Sawji. All Rights Reserved.</p>
+        </DIV>
+    </div>
+    
+
+    <!-- About Section -->
+    <div id="about" class="section">
+        <h2>ABOUT ME </h2>
+        <div class="section-content">
+            <h3>INTRODUCTION</h3>
+            <p>I am Vivek Sawji, a dedicated and passionate developer with a keen interest in creating efficient and scalable solutions. With a strong foundation in computer science, I continuously strive to expand my knowledge and skills.</p>
+
+            <h3>PROFESSIONAL DETAILS</h3>
+            <p>I have experience in developing web applications using modern technologies and frameworks. My expertise lies in backend development, but I am also proficient in frontend technologies, enabling me to build full-stack applications.</p>
+
+            <h3>PERSONAL DETAILS</h3>
+            <p>Outside of coding, I enjoy playing game, traveling, and exploring new technologies. I believe in lifelong learning and am always eager to take on new challenges.</p>
+
+            <h3>EDUCTION</h3>
+            <p>Bachelor of science in Computer Science - Mumbai University</p>
+
+            <h3>EXPERIENCE</h3>
+            <p>Worked on various projects spanning over 3-4 months, including internships and freelance work.</p>
+
+            <h3>PROJECTS</h3><br>
+            <a href="https://vivekx11.github.io/GameSpace/" 
+            style="font-family: 'Arial', sans-serif; font-weight: bold; text-decoration: none; color: #fefdfd; background-color: #7b90f8; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease, transform 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#354595'; this.style.transform='scale(1.05)';"
+            onmouseout="this.style.backgroundColor='#354595'; this.style.transform='scale(1)';"
+            onmousedown="this.style.backgroundColor='#354595'; this.style.transform='scale(1)';"
+            onmouseup="this.style.backgroundColor='#354595';">GAME_SPACE
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="section">
+        <h2>SKILLS</h2>
+        <div class="section-content">
+            <div class="skills-list">
+                <div class="skills-column">
+                    <h3>EXPERT IT</h3>
+                    <div id="github">
+                        <img src="python-svgrepo-com.svg" alt="python">
+                        <img src="java-4-logo-svgrepo-com.svg" alt="java">
+                        <img src="c-logo-svgrepo-com.svg" alt="c++">
+                        <img src="html-5-logo-svgrepo-com.svg" alt="html">
+                        <img src="css3-logo-svgrepo-com.svg" alt="css">
+                        <img src="javascript-logo-svgrepo-com.svg" alt="javascript">
+                        <img src="mysql-logo-svgrepo-com.svg" alt="sql">
+                    </div>
+                    
+                </div>
+                <div class="skills-column">
+                    <h3>LEARNING </h3>
+                    <div id="github">
+                        <img src="kotlin-1-logo-svgrepo-com.svg" alt="kotlin">
+                        <img src="nodejs-1-logo-svgrepo-com.svg" alt="node.js">
+                        <img src="php-logo-svgrepo-com.svg" alt="php">
+                        <img src="react-logo-svgrepo-com.svg" alt="react">
+
+                    </div>
+
+                    
+                </div>
+                <div class="skills-column">
+                    <h3>EDITOR/TOOL</h3>
+                    <div id="github">
+                    <img src="visual-studio-code-logo-svgrepo-com.svg" alt="vs code">
+                    <img src="icons8-intellij-idea-48.png" alt="intellij">
+                    <img src="python-svgrepo-com.svg" alt="python">
+                    <img src="icons8-android-studio-48.png"alt="android">
+                    <img src="github-icon-1-logo-svgrepo-com.svg" alt="github">
+                </div>
+                    
+                </div>
+                <!-- Container for images -->
+                    
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="section">
+        <h2>PORTFOLIO & PROJECTS</h2>
+        <a href="https://vivekx11.github.io/GameSpace/">1.GAME SPACE</a>
+        <div class="section-content">
+            <p>Coming Soon! Stay tuned for updates on my latest projects and accomplishments.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <h2>CONTACT ME</h2>
+        <div class="section-content">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="f87d2809-b6f2-41dc-b87e-9ac33a696304">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+        <div class="social-menu">
+            <ul>
+                <li>
+                    <a href="https://github.com/vivekx11" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/vivekx___" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:viveksawji@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/viveksawji" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Dark Mode Toggle
+const darkModeToggle = document.getElementById('darkModeToggle');
+const body = document.body;
+const nav = document.querySelector('nav');
+const sections = document.querySelectorAll('.section');
+
+darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    nav.classList.toggle('dark-mode');
+    sections.forEach(section => {
+        section.classList.toggle('dark-mode');
+    });
+});
+
+// Role Text Rotator
+const roles = ["PYTHON DEVELOPER...!", "JAVA DEVELOPER...!", "BACKEND BEGINNER...!", "FRONTEND DEVELOPER...!", "STUDENT...!"];
+let roleIndex = 0;
+const roleElement = document.getElementById('role');
+
+setInterval(() => {
+    roleIndex = (roleIndex + 1) % roles.length;
+    roleElement.textContent = roles[roleIndex];
+}, 3000);
+
+// Show Section Function
+function showSection(sectionId) {
+    // Hide all sections
+    document.querySelectorAll('.section').forEach(section => {
+        section.style.display = 'none';
+    });
+    // Show the selected section
+    document.getElementById(sectionId).style.display = 'block';
+    // Close mobile menu if open
+    if (window.innerWidth <= 768) {
+        navLinks.classList.remove('active');
+    }
+}
+
+// Menu Toggle for Mobile
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+
+
+    </script>
+
+</body>
+</html>
