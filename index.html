@@ -14,7 +14,7 @@
         /* General Styles */
         body {
             margin: 0;
-            background: linear-gradient(to right, #70e1f5, #ffd194);
+            background:#ffffff;
             font-family: Arial, sans-serif;
             transition: background-color 0.3s, color 0.3s;
         }
@@ -25,7 +25,7 @@
         }
         /* Navigation Styles */
         nav {
-            background: linear-gradient(to right, #a481df, #2596be);
+            background-color:#b8b8f8;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -98,7 +98,7 @@
         /* Specialties */
         .specialties h2 {
             font-size: 35px;
-            color: #9333ea;
+            color: #4505f6;
             margin-bottom: 20px;
         }
         .specialties ol {
@@ -319,7 +319,7 @@
 
 /* Dark Mode for Specialties Section */
 .dark-mode .specialties h2 {
-    color: #9333ea; /* Bright color for specialties heading */
+    color: #4505f6; /* Bright color for specialties heading */
 }
 
 .dark-mode .specialties ol {
@@ -566,178 +566,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
 }
 
-/* Link styling */
-/*body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
-
-.menu.dark-mode {
-    background-color: #222;
-}
-
-.toggle-button {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-}
-
-.navbar-links {
-    display: flex;
-}
-
-.navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    list-style: none;
-}
-
-.navbar-links li {
-    margin: 0;
-    padding: 10px;
-}
-
-.navbar-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-}
-
-.navbar-links i {
-    font-size: 20px;
-    margin-right: 8px;
-}
-
-#darkModeToggle {
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .navbar-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        background-color: #444;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    }
-
-    .navbar-links ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navbar-links li {
-        text-align: center;
-        width: 100%;
-        padding: 15px 0;
-        margin: 5px 0;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-}
-
-.navbar-links.active {
-    display: flex;
-}
-   
-body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        transition: background-color 0.3s, color 0.3s;
-    }
-
-    body.dark-mode {
-        background-color: #121212;
-        color: #e0e0e0;
-    }
-
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #333;
-        padding: 10px;
-        transition: background-color 0.3s;
-    }
-
-    nav.dark-mode {
-        background-color: #222;
-    }
-
-    .logo {
-        color: #fff;
-        font-size: 24px;
-    }
-
-    .menu-toggle {
-        display: none;
-        cursor: pointer;
-        font-size: 24px;
-        color: #fff;
-    }
-
-    .nav-links {
-        display: flex;
-    }
-
-    .nav-links ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        list-style: none;
-    }
-
-    .nav-links li {
-        margin: 0;
-        padding: 10px;
-    }
-
-    .nav-links a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-    }
-
-    .nav-links i {
-        font-size: 20px;
-        margin-right: 8px;
-    }*/
 
     #darkModeToggle {
         cursor: pointer;
@@ -779,6 +607,12 @@ body {
         padding: 60px;
         min-height: 100vh;
     }
+    .output {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            white-space: pre-wrap;
+        }
 /* Navbar styles */
 
 
@@ -809,7 +643,7 @@ body {
     <div id="homeContent" class="section">
         <h1><span style="color: #9333ea;">HELLO,👋</span> IT'S VIVEK SAWJI</h1>
         <img src="teacher-man-avatar-icon-illustration-vector-style_131965-958.avif" alt="Avatar">
-        <h2>I AM A <span id="role">PYTHON DEVELOPER...!</span></h2><BR>
+        <div class="output" id="output"></div>
             
             
 
@@ -836,7 +670,7 @@ body {
         </div>
         <div class="thought">
             
-            <p>"Code islike humor. When you have to explain it, it’s bad." </p>
+            <p>"Code is like humor. When you have to explain it, it’s bad." </p>
                                                 <P>- Cory House</p><BR>
         </div>
         <DIV>
@@ -1025,15 +859,79 @@ darkModeToggle.addEventListener('click', () => {
     });
 });
 
-// Role Text Rotator
-const roles = ["PYTHON DEVELOPER...!", "JAVA DEVELOPER...!", "BACKEND BEGINNER...!", "FRONTEND DEVELOPER...!", "STUDENT...!"];
-let roleIndex = 0;
-const roleElement = document.getElementById('role');
+const alphabet = "QWERTYUIOPLKJHGFDSAZXCVBNM";
+    const sentences = [
+        "PYHTON DEVLOPER",
+        "JAVA DEVLOPER",
+        "WEB DEVLOPER",
+        "STUDENT"
+    ];
+    let store = "";
+    let delay = 25; // Time delay between each step in milliseconds
+    let eraseDelay = 50; // Time delay for erasing each character
 
-setInterval(() => {
-    roleIndex = (roleIndex + 1) % roles.length;
-    roleElement.textContent = roles[roleIndex];
-}, 3000);
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function matchLetter(targetLetter) {
+        let outputDiv = document.getElementById('output');
+
+        for (let i = 0; i < alphabet.length; i++) {
+            await sleep(delay); // Add delay for each step
+            outputDiv.innerText = store + alphabet[i]; // Show the current letter being checked
+            
+            if (alphabet[i] === targetLetter) {
+                store += alphabet[i]; // Add the correct letter to store
+                break; // Stop the loop once the correct letter is found
+            }
+        }
+    }
+
+    async function startSentence(sentence) {
+        let outputDiv = document.getElementById('output');
+
+        for (let i = 0; i < sentence.length; i++) {
+            if (sentence[i] === " ") {
+                store += " "; // Add space if the target letter is a space
+                outputDiv.innerText = store;
+            } else {
+                await matchLetter(sentence[i]); // Find and display the correct letter
+            }
+        }
+    }
+
+    async function eraseSentence() {
+        let outputDiv = document.getElementById('output');
+        
+        while (store.length > 0) {
+            store = store.slice(0, -1); // Remove the last character
+            outputDiv.innerText = store; // Update the display with the reduced string
+            await sleep(eraseDelay); // Delay to simulate backspace effect
+        }
+    }
+
+    async function startProcess() {
+        let outputDiv = document.getElementById('output');
+        
+        // Go through each sentence
+        for (let sentence of sentences) {
+            store = ""; // Clear the store for the new sentence
+            await startSentence(sentence); // Process the current sentence
+
+            // Delay after completing one sentence before erasing
+            await sleep(1000);
+            await eraseSentence(); // Erase the sentence one letter at a time
+        }
+
+        // Restart the process once all sentences are processed
+        startProcess(); // Recursively call to make it continuous
+    }
+
+    // Automatically start the process when the page loads
+    window.onload = async function() {
+        await startProcess();
+    };
 
 // Show Section Function
 function showSection(sectionId) {
