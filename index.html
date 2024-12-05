@@ -4,7 +4,7 @@
     <!-- Metadata and external stylesheet links -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=800">
-    <title>Responsive Navbar</title>
+    <title>VIVEK.PORTFOLIO</title>
     <!-- Link to external stylesheet for custom styles -->
     <link rel="stylesheet" href="styles.css">
     <!-- Link to Font Awesome for icons -->
@@ -16,7 +16,7 @@
         <!-- Logo section of the navigation bar -->
         <div class="logo">
             <!-- The logo text, with different colors applied to "VIVEK" and "PORTFOLIO" -->
-            <span style="color: #564af9;">&lt;/ VIVEK</span>  <span style="color: #564af9;">PORTFOLIO &gt;</span>
+            <span style="color: #f9af03;">"VIVEK"</span><br> <span style="color: #f9af03;">"PORTFOLIO"</span>
         </div>
         <!-- Menu toggle button for smaller screens -->
         <div class="menu-toggle" id="menuToggle">
@@ -39,31 +39,39 @@
 
     <!-- Sections of the website corresponding to the navigation links -->
         <div id="homeContent" class="section">
-            <h1><span style="color: #9333ea;">HEY,👋<br></span> IT'S VIVEK SAWJI</h1>
+            <h1><span style="color: #2196F3;">'HEY,👋ITS'<br>"VIVEK SAWJI"</h1></span>
+    
             <div id="pp">
-                <img src="teacher-man-avatar-icon-illustration-vector-style_131965-958.avif" alt="Avatar">
+                <img src="teacher-man-avatar-icon-illustration-vector-style_131965-958.avif" alt="profilephoto">
             <b>
             </div>
-            <div class="output" id="output"></div>
-            </b>
+            <h3> I AM </h3>
+            <h3>
+                <div class="output" id="output"></div>
+            </h3>
+            
+        </b>
                 
                 
     
             <div class="welcome-message">
-                <h2>WELCOME TO MY PORTFOLIO!</h2>
+                <h2>"WELCOME"</h2>
                 <h4>
                     <p>~"I'm passionate about turning ideas into reality through code".
                         Let's build something amazing together!~</p>
                 </h4>
                 </div>
                 <div class="thought">
-                
-                    <p>"Code is like humor. When you have to explain it, it’s bad." </p>
-                                                        <P>- Cory House</p><BR>
+                <h4>
+                    <i>"Code is like humor. When you have to explain it, it’s bad." </p>
+                        <P>- Cory House</i><BR>
+                </h4>
+                   
                 </div>
+            
            
                 <div class="specialties">
-                <h2>MY SPECIALTIES</h2>
+                <h2>"skills"</h2>
                 <div id="github">
                     <img src="python-svgrepo-com.svg" alt="python">
                     <img src="java-4-logo-svgrepo-com.svg" alt="java">
@@ -72,259 +80,171 @@
                     <img src="css3-logo-svgrepo-com.svg" alt="css">
                     <img src="javascript-logo-svgrepo-com.svg" alt="javascript">
                     <img src="mysql-logo-svgrepo-com.svg" alt="sql">
+                    <img src="kotlin-1-logo-svgrepo-com.svg" alt="kotlin">
+                    <img src="nodejs-1-logo-svgrepo-com.svg" alt="node.js">
+                    <img src="php-logo-svgrepo-com.svg" alt="php">
+                    <img src="react-logo-svgrepo-com.svg" alt="react">
+                <h2>"tool/editor"</h2>
+                    <img src="intellij-idea-svgrepo-com.svg" alt="intellij">
+                    <img src="visual-studio-code-logo-svgrepo-com.svg" alt="vs code">
+                    <img src="github-icon-1-logo-svgrepo-com.svg" alt="github">
+                    <img src="icons8-android-studio.svg" alt="andriodstudio">
+                </div>
                 </div>
                 </div>
            
-            
-            
-        <button id="scrollToTop" title="Go to top">↑</button>
-        <style>
-            /* Scroll-to-Top Button */
-#scrollToTop {
-    display: none; /* Hidden by default */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background-color: #2c3e50;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    font-size: 20px;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-    z-index: 1000;
-}
-
-#scrollToTop:hover {
-    background-color: #34495e;
-    transform: scale(1.1);
-}
-
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-
-        </style>
-            
-
-
-      
-        <script>
-           
-    // Show the button after scrolling down 100px
-    window.onscroll = function () {
-        const scrollToTopButton = document.getElementById("scrollToTop");
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            scrollToTopButton.style.display = "block";
-        } else {
-            scrollToTopButton.style.display = "none";
-        }
-    };
-
-    // Scroll to top when the button is clicked
-    document.getElementById("scrollToTop").onclick = function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-</script>
+                <button class="Btn" id="scrollToTop">
+                    <svg height="1.5cm" width="1.5cm" class="arrow" viewBox="0 0 512 512">
+                      <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
+                    </svg>
+                    <span class="tooltip">Back to Top</span>
+                    <style>
+                        /* Scroll-to-Top Button */
+                        .Btn {
+                          width: 110px; /* Increase button size for the larger arrow */
+                          height: 110px;
+                          background: linear-gradient( #6a11cb, #2575fc);
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          border-radius: 50%;
+                          cursor: pointer;
+                          position: fixed;
+                          bottom: 20px;
+                          right: 20px;
+                          border: none;
+                          display: none; /* Initially hidden */
+                          z-index: 1000;
+                        }
+                        
+                        .arrow path {
+                          fill: white;
+                        }
+                        
+                        /* Tooltip styling */
+                        .tooltip {
+                          position: absolute;
+                          bottom: 170px; /* Adjust for the larger button */
+                          background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+                          color: white;
+                          padding: 15px 10px;
+                          border-radius: 115px;
+                          font-size: 1.8em;
+                          white-space: nowrap;
+                          opacity: 0;
+                          visibility: hidden;
+                          transition: opacity 0.3s, visibility 0.3s;
+                        }
+                        
+                        .Btn:hover .tooltip {
+                          opacity: 1;
+                          visibility: visible;
+                        }
+                        
+                        .Btn:hover .arrow {
+                          animation: slide-in-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+                        }
+                        
+                        @keyframes slide-in-bottom {
+                          0% {
+                            transform: translateY(10px);
+                            opacity: 0;
+                          }
+                          100% {
+                            transform: translateY(0);
+                            opacity: 1;
+                          }
+                        }
+                        </style>
+                  </button>              
 <div id="about" class="section">
-        <h2>ABOUT ME </h2>
+        <h2>"ABOUT ME" </h2>
         <div class="section-content">
-            <h3>INTRODUCTION</h3>
+            <h3>~INTRODUCTION~</h3>
             <p>I am Vivek Sawji, a dedicated and passionate developer with a keen interest in creating efficient and scalable solutions. With a strong foundation in computer science, I continuously strive to expand my knowledge and skills.</p>
 
-            <h3>PROFESSIONAL DETAILS</h3>
+            <h3>~PROFESSIONAL DETAILS~</h3>
             <p>I have experience in developing web applications using modern technologies and frameworks. My expertise lies in backend development, but I am also proficient in frontend technologies, enabling me to build full-stack applications.</p>
 
-            <h3>PERSONAL DETAILS</h3>
+            <h3>~PERSONAL DETAILS~</h3>
             <p>Outside of coding, I enjoy playing game, traveling, and exploring new technologies. I believe in lifelong learning and am always eager to take on new challenges.</p>
 
-            <h3>EDUCTION</h3>
+            <h3>~EDUCTION~</h3>
             <p>Bachelor of science in Computer Science - Mumbai University</p>
 
-            <h3>EXPERIENCE</h3>
-            <p>Worked on various projects spanning over 3-4 months, including internships and freelance work.</p>
+            <h3>~EXPERIENCE~</h3>
+            <p>Worked on various projects spanning over 6-8 months, including internships and freelance work.</p>
 
-            <h3>PROJECTS</h3><br>
+        </div>
+    </div>
+
+            
+            
+            
+             <!--<h3>PROJECTS</h3><br>
             <P>1.STONE,PAPER,SICSSOR & GUESS THE NUMBER</P>
             <a href="https://vivekx11.github.io/GameSpace/" target="_blank">
                 <button> GAME_SPACE
                 </button>
             </a>
-            
-            <style>
-                /* From Uiverse.io by adamgiebl */ 
-            button {
-              position: relative;
-              display: inline-block;
-              margin: 15px;
-              padding: 15px 30px;
-              text-align: center;
-              font-size: 18px;
-              letter-spacing: 1px;
-              text-decoration: none;
-              color: #725AC1;
-              background: transparent;
-              cursor: pointer;
-              transition: ease-out 0.5s;
-              border: 2px solid #725AC1;
-              border-radius: 10px;
-              box-shadow: inset 0 0 0 0 #725AC1;
-            }
-            
-            button:hover {
-              color: white;
-              box-shadow: inset 0 -100px 0 0 #725AC1;
-            }
-            
-            button:active {
-              transform: scale(0.9);
-            }
-            </style>
-            <script>
-                document.getElementById("game-space-btn").addEventListener("click", function() {
-                window.location.href = "https://vivekx11.github.io/GameSpace/";  // Replace with your URL
-              });
-            </script>
-
-
 <P>2.WATER TESTING WEBPAGE(FRONTEND)</P>
 <a href="https://viveks2907.github.io/WT.frontend./" target="_blank">
     <button> WATER TESTING
     </button>
 </a>
-
-<style>
-    /* From Uiverse.io by adamgiebl */ 
-button {
-  position: relative;
-  display: inline-block;
-  margin: 15px;
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #725AC1;
-  background: transparent;
-  cursor: pointer;
-  transition: ease-out 0.5s;
-  border: 2px solid #725AC1;
-  border-radius: 10px;
-  box-shadow: inset 0 0 0 0 #725AC1;
-}
-
-button:hover {
-  color: white;
-  box-shadow: inset 0 -100px 0 0 #725AC1;
-}
-
-button:active {
-  transform: scale(0.9);
-}
-</style>
-<script>
-    document.getElementById("game-space-btn").addEventListener("click", function() {
-    window.location.href = "https://viveks2907.github.io/WT.frontend./";  // Replace with your URL
-  });
-</script>
-
-
-
-
-
 <P>3.MEMORYGAME</P>
 <a href="https://vivekx11.github.io/memorygame/" target="_blank">
     <button> MEMORYGAME
     </button>
 </a>
-
-<style>
-    /* From Uiverse.io by adamgiebl */ 
-button {
-  position: relative;
-  display: inline-block;
-  margin: 15px;
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #725AC1;
-  background: transparent;
-  cursor: pointer;
-  transition: ease-out 0.5s;
-  border: 2px solid #725AC1;
-  border-radius: 10px;
-  box-shadow: inset 0 0 0 0 #725AC1;
-}
-
-button:hover {
-  color: white;
-  box-shadow: inset 0 -100px 0 0 #725AC1;
-}
-
-button:active {
-  transform: scale(0.9);
-}
-</style>
-<script>
-    document.getElementById("game-space-btn").addEventListener("click", function() {
-    window.location.href = "https://vivekx11.github.io/memorygame/";  // Replace with your URL
-  });
-</script>
 </div>
+</div>-->
 
 
 <div id="skills" class="section">
-            <h2>SKILLS</h2>
-            <div class="skills-column">
-                        <h3>EXPERT IT</h3>
-                        <div id="github">
-                            <img src="python-svgrepo-com.svg" alt="python">
-                            <img src="java-4-logo-svgrepo-com.svg" alt="java">
-                            <img src="c-logo-svgrepo-com.svg" alt="c++">
-                            <img src="html-5-logo-svgrepo-com.svg" alt="html">
-                            <img src="css3-logo-svgrepo-com.svg" alt="css">
-                            <img src="javascript-logo-svgrepo-com.svg" alt="javascript">
-                            <img src="mysql-logo-svgrepo-com.svg" alt="sql">
-                        </div>
-                        
-                    </div>
-                    <div class="skills-column">
-                        <h3>LEARNING </h3>
-                        <div id="github">
-                            <img src="kotlin-1-logo-svgrepo-com.svg" alt="kotlin">
-                            <img src="nodejs-1-logo-svgrepo-com.svg" alt="node.js">
-                            <img src="php-logo-svgrepo-com.svg" alt="php">
-                            <img src="react-logo-svgrepo-com.svg" alt="react">
-    
-                        </div>
-    
-                        
-                    </div>
-                    <div class="skills-column">
-                        <h3>EDITOR/TOOL</h3>
-                        <div id="github">
-                        <img src="visual-studio-code-logo-svgrepo-com.svg" alt="vs code">
-                        <img src="icons8-intellij-idea-48.png" alt="intellij">
-                        <img src="python-svgrepo-com.svg" alt="python">
-                        <img src="icons8-android-studio-48.png"alt="android">
-                        <img src="github-icon-1-logo-svgrepo-com.svg" alt="github">
-                    </div>
-                        
-                </div>
+    <h2>"PROJECTS"</h2>
+
+    <div class="skills-row">
+        <img src="memory.jpg" alt="Python" class="skill-image">
+        <div class="skill-detail">
+            <h3>MEMORYGAME</h3>
+            <p>click the button to play the game </p>
+        </div>
+    </div>
+
+    <div class="skills-row reverse">
+        <div class="skill-detail">
+            <h3>GAME SPACE </h3>
+            <p>there are 2 type of game on it stone,paper,sicssor</p>
+            <p>the second one is gusse the number </p>
+        </div>
+        <img src="gamespace.jpg" alt="Java" class="skill-image">
+    </div>
+ <!--
+    <div class="skills-row">
+        <img src="c-logo-svgrepo-com.svg" alt="C++" class="skill-image">
+        <div class="skill-detail">
+            <h3>C++</h3>
+            <p>C++ is widely used for competitive programming and game development.</p>
+        </div>
+    </div>
+
+    <div class="skills-row reverse">
+        <div class="skill-detail">
+            <h3>HTML & CSS</h3>
+            <p>HTML and CSS are foundational for creating structured and visually appealing websites.</p>
+        </div>
+        <img src="html-5-logo-svgrepo-com.svg" alt="HTML" class="skill-image">
+    </div>
+
+    Add more rows as needed -->
+</div>
+
                     <!-- Container for images -->
 
 
         <div id="contact" class="section">
-            <h2>CONTACT ME</h2>
+            <h2>"CONTACT ME"</h2>
             <div class="section-content">
                 <form action="https://getform.io/f/bmddyxna" method="POST">
                     <label for="name">Name</label>
@@ -366,7 +286,7 @@ button:active {
             </div>
         <b><DIV>
             <p>&copy; 2024 Vivek Sawji. All Rights Reserved.</p>
-            <p>Create by viveksawji</p>
+            <p>Create by "viveksawji"</p>
         </DIV>
     </b>
     
@@ -380,1199 +300,413 @@ button:active {
 
 <!-- Embedded CSS for styling the webpage -->
 <style>
-    /* General body styling */
-    body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        transition: background-color 0.3s, color 0.3s;
-    }
-
-    /* Styling for the body when dark mode is activated */
-    body.dark-mode {
-        background-color: #121212;
-        color: #e0e0e0;
-    }
-
-    /* Styling for the navigation bar */
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #333;
-        padding: 10px;
-        transition: background-color 0.3s;
-    }
-
-    /* Styling for the navigation bar in dark mode */
-    nav.dark-mode {
-        background-color: #222;
-    }
- /* Styling for the logo text *
-    .logo {
-        color: #fff;
-        font-size: 24px;
-    }
-
-    .menu-toggle {
-        display: none;
-        cursor: pointer;
-        font-size: 24px;
-        color: #fff;
-    }
-
-    /* Display the navigation links in a row *
-    .nav-links {
-        display: block;
-    }
-
-    /* Styling for the unordered list inside the nav links *
-    .nav-links ul {
-        margin: 0;
-        padding: 0;
-        display:flex;
-        list-style: none;
-    }
-
-    /* Styling for each list item in the navigation *
-    .nav-links li {
-        margin: 0;
-        padding: 10px;
-    }
-
-    /* Styling for the anchor tags in the navigation *
-    .nav-links a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-    }
-
-    /* Styling for the icons in the navigation *
-    .nav-links i {
-        font-size: 20px;
-        margin-right: 8px;
-    }
-
-    /* Styling for the dark mode toggle button *
-    #darkModeToggle {
-        cursor: pointer;
-    }*/
- 
-/* Styling for the navigation bar */
-
-/* Styling for the navigation bar */
- /* Styling for the navigation bar */
- nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #333;
-        padding: 10px;
-        transition: background-color 0.3s;
-    }
-
-    /* Styling for the navigation bar in dark mode */
-    nav.dark-mode {
-        background-color: #222;
-    }
-
-    /* Styling for the logo text */
-    .logo {
-        color: #fff;
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    /* Styling for the menu toggle button */
-    .menu-toggle {
-        display: none;
-        cursor: pointer;
-        font-size: 24px;
-        color: #fff;
-    }
-
-    /* Display the navigation links in a row */
-    .nav-links {
-        display: block;
-    }
-
-    /* Styling for the unordered list inside the nav links */
-    .nav-links ul {
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
-        display:flex;
-        list-style: none;
-    }
-
-    /* Styling for each list item in the navigation */
-    .nav-links li {
-        margin: 0;
-        padding: 10px;
-    }
-
-    /* Styling for the anchor tags in the navigation */
-    .nav-links a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-    }
-
-    /* Styling for the icons in the navigation */
-    .nav-links i {
-        font-size: 20px;
-        margin-right: 40px;
-    }
-
-
-
-
-
-
-
-
-
-
-    /* Media query for smaller screens (max-width: 768px) */
-    @media (max-width: 768px) {
-        /* Hide the navigation links initially */
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            width: 200px;
-            background-color: #444;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Arrange the list items in a column */
-        .nav-links ul {
-            flex-direction: column;
-            width: 100%;
-        }
-
-        /* Styling for each list item in the mobile view */
-       .nav-links li {
-            text-align: center;
-            width: 100%;
-            padding: 15px 0;
-            margin: 5px 0;
-        }
-
-        /* Show the menu toggle button*/
-        .menu-toggle {
-            display: flex;
-        }
-    }
-   
-
-    /* Active class for showing the navigation links on small screens */
-    .nav-links.active {
-        display: flex;
-    }
-    .section {
-        padding: 60px;
-        min-height: 100vh;
-    }
-    
-    /* Styling for each section of the webpage */
-    /* Home Section */
-    #homeContent {
-            display: block;
-            text-align: center;
-        }
-        #homeContent h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            color: #070707;
-        }
-        #homeContent span {
-            color: #9333ea;
-            font-weight: bold;
-        }
-        /* Welcome Message */
-        .welcome-message h2 {
-    
-            font-size: 35px;
-            color: #4505f6;
-            margin-bottom: 10px;
-            position: relative;
-            
-        }
-        .welcome-message p {
-            font-size: 20px;
-            color: #070707;
-        }
-
-
-
-        /* Specialties */
-        .specialties h2 {
-            font-size: 35px;
-            color: #4505f6;
-            margin-bottom: 20px;
-        }
-        .specialties ol {
-            list-style: disc inside;
-            font-size: 20px;
-            color: #070707;
-            padding: 0;
-            margin: 0 auto;
-            max-width: 400px;
-            text-align: left;
-        }
-        /* Thought Section */
-        .thought h2 {
-            font-size: 35px;
-            color: #4505f6;
-            margin-bottom: 10px;
-        }
-        .thought p {
-            font-size: 20px;
-            color: #070707;
-            font-style: italic;
-        }
-        #about .section-content {
-            background-color: #f2f2f2;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        #about h2 {
-            text-align: center;
-            font-size: 35px;
-            color: #4505f6;
-            margin-bottom: 30px;
-        }
-        #about .section-content h3 {
-            font-size: 25px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        #about .section-content p {
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        /* Skills Section */
-        #skills .section-content {
-            background-color: #f2f2f2;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        #skills h2 {
-            text-align: center;
-            font-size: 35px;
-            color: #4505f6;
-            margin-bottom: 30px;
-        }
-        #skills .skills-list {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        #skills .skills-column {
-            flex: 1;
-            min-width: 200px;
-            margin: 10px;
-        }
-        #skills .skills-column h3 {
-            font-size: 25px;
-            color: #333;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        /* Contact Section */
-        #contact .section-content {
-            background-color: #f2f2f2;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        #contact h2 {
-            text-align: center;
-            font-size: 35px;
-            color: #4505f6;
-            margin-bottom: 30px;
-        }
-        #contact form label {
-            display: block;
-            font-size: 18px;
-            color: #0a0a0a;
-            margin-bottom: 5px;
-        }
-        #contact form input,
-        #contact form textarea {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        #contact form input[type="submit"] {
-            background-color: #4505f6;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        #contact form input[type="submit"]:hover {
-            background-color: #3a04d1;
-        }
-        #contact form input[type="Reset"] {
-            background-color: #4505f6;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        #contact form input[type="Reset"]:hover {
-            background-color: #3a04d1;
-        }
-        .social-menu {
-    text-align: center;
-    padding: 20px 0;
-     /* Background color of the menu */
-}
-
-.social-menu ul {
-    list-style: none;
-    padding: 0;
+    /* General Styles */
+/* Universal Styling */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to bottom right, #f0f0f0, #e6e6e6);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: linear-gradient(to bottom right, #121212, #1e1e1e);
+    color: #e0e0e0;
+}
+
+/* Navigation Bar */
+nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.social-menu ul li {
-    margin: 0 10px; /* Space between icons */
-}
-
-.social-menu ul li a {
-    display: block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    background-color: #444; /* Background color of the icons */
-    color: #fff;
-    font-size: 25px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.social-menu ul li a:hover {
-    background-color: #555;  /* Color on hover */
-    transform: scale(1.1); /* Slight zoom effect */
-}
-
-.social-menu ul li a i {
-    display: inline-block;
-    vertical-align: middle;
-}
-/* Basic CSS for the image */
-/* Default (Light Mode) Styles */
-.dark-mode {
-    background-color: #111827; /* True black background */
-    color: #fefdfd; /* White text color */
-}
-
-/* Dark Mode for Navigation */
-.dark-mode nav {
-    background-color: #b8b8f8; /* Slightly lighter black for contrast */
-}
-
-.dark-mode .nav-links ul li a {
-    color: #070707; /* White text color for navigation links */
-}
-
-.dark-mode .nav-links ul li a:hover {
-    background-color: #42484b; /* Lighter black for hover effect */
-    color: #f4f3f3;
-}
-
-/* Dark Mode for Sections */
-.dark-mode .section-content {
-    background-color: #111111; /* Slightly lighter black for section backgrounds */
-    color: #ffffff; /* White text color for section content */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.447); /* Soft white shadow */
-}
-
-/* Dark Mode for Home Section */
-.dark-mode #homeContent h1 {
-    color: #fefdfd; /* Near white for headings */
-}
-
-.dark-mode #homeContent span {
-    color: #9333ea; /* Bright color for highlighted text */
-}
-
-.dark-mode .welcome-message h2 {
-    color: #4505f6; /* Bright color for welcome message */
-}
-
-.dark-mode .welcome-message p {
-    color: #fefdfd; /* Near white for welcome message text */
-}
-
-/* Dark Mode for Specialties Section */
-.dark-mode .specialties h2 {
-    color: #4505f6; /* Bright color for specialties heading */
-}
-
-.dark-mode .specialties ol {
-    color: #f3f1f1; /* Near white for list items */
-}
-
-/* Dark Mode for Thought Section */
-.dark-mode .thought h2 {
-    color: #9333ea; /* Bright color for thought heading */
-}
-
-.dark-mode .thought p {
-    color: #fefcfc; /* Near white for thought text */
-    font-style: italic; /* Keep the italic style */
-}
-
-/* Dark Mode for About Section */
-.dark-mode #about h2 {
-    color: #9333ea; /* Bright color for about heading */
-}
-
-.dark-mode #about .section-content h3 {
-    color: #9333ea; /* White text color for subheadings */
-}
-
-.dark-mode #about .section-content p {
-    color: #050505; /* Near white for paragraph text */
-}
-
-/* Dark Mode for Skills Section */
-.dark-mode #skills h2 {
-    color: #9333ea; /* Bright color for skills heading */
-}
-
-.dark-mode #skills .skills-column h3 {
-    color: #9333ea; /* White text color for skills subheadings */
-}
-
-.dark-mode #skills .skills-column ol li {
-    color: #070707; /* Near white for list items */
-}
-
-/* Dark Mode for Portfolio Section */
-.dark-mode #portfolio h2 {
-    color: #0056b3; /* Bright color for portfolio heading */
-}
-
-.dark-mode #portfolio .section-content p {
-    color: #fbf9f9; /* Near white for portfolio content */
-}
-
-/* Dark Mode for Contact Section */
-.dark-mode #contact h2 {
-    color: #9333ea; /* Bright color for contact heading */
-}
-
-.dark-mode #contact .section-content {
-    background-color: #111111; /* Slightly lighter black for contact section background */
-}
-
-.dark-mode #contact form label {
-    color: #ffffff; /* White text color for form labels */
-}
-
-.dark-mode #contact form input,
-.dark-mode #contact form textarea {
-    background-color: #222222; /* Lighter black for input fields */
-    color: #ffffff; /* White text color for input fields */
-    border-color: #333333; /* Slightly lighter border */
-}
-
-.dark-mode #contact form input[type="submit"] {
-    background-color: #4505f6; /* Purple background for submit button */
-    color: #ffffff; /* White text color for submit button */
-}
-
-.dark-mode #contact form input[type="submit"]:hover {
-    background-color: #3a04d1; /* Slightly darker purple on hover */
-}
-.dark-mode #contact form input[type="Reset"] {
-    background-color: #4505f6; /* Purple background for submit button */
-    color: #ffffff; /* White text color for submit button */
-}
-.dark-mode #contact form input[type="Reset"]:hover {
-    background-color: #3a04d1; /* Slightly darker purple on hover */
-}
-.dark-mode #skills .section-content {
-    background-color: #222222;
-    color: #ffffff;
-}
-.dark-mode #about .section-content {
-    background-color: #222222;
-    color: #ffffff;
-}
-.dark-mode #about .section-content p {
-    font-size: 18px;
-    color: #ffffff;
-    margin-bottom: 20px;
-} 
-.dark-mode .logo {
-    font-size: 25px;
+.logo {
+    font-size: 2rem;
     font-weight: bold;
-    color: #060606;
+    letter-spacing: 1.5px;
+    animation: fadeIn 1.5s ease-in-out;
 }
-/* General styling for the section */
-/* Base styling for specialties */
-.specialties {
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links ul li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Dark Mode Toggle */
+#darkModeToggle i {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Sections */
+.section {
+    padding: 5rem 2rem;
     text-align: center;
-    padding: 2rem;
+    background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
     border-radius: 10px;
     margin: 2rem auto;
-    max-width: 800px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1.5s ease-in-out;
 }
 
-/* Light mode (default) */
-body.light-mode .specialties {
-    background-color: #f4f4f9; /* Subtle light background */
-    color: #333; /* Dark text for contrast */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+body.dark-mode .section {
+    background: linear-gradient(to bottom right, #2b2b2b, #3a3a3a);
 }
 
-/* Dark mode */
-body.dark-mode .specialties {
-    background-color: #1e1e2f; /* Dark background */
-    color: #f1f1f1; /* Light text for contrast */
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-/* Section heading */
-.specialties h2 {
-    font-size: 2rem;
+.section h2 {
+    font-size: 2.5rem;
     margin-bottom: 1rem;
-    font-family: 'Arial', sans-serif;
+    color: #6a11cb;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
-/* Icon container */
-.specialties #github {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem; /* Space between icons */
-}
-/* Icon styling */
-.specialties #github img {
-    width: 80px;
-    height: 80px;
-    transition: transform 0.3s ease, box-shadow 0.33s ease;
-    border-radius: 8px;
-    background-color: #fff;
-    padding: 0.5rem;
+.section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #555;
 }
 
-/* Icon hover effect */
-.specialties #github img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+body.dark-mode .section p {
+    color: #ccc;
 }
 
-/* Adjust icon background for dark mode */
-body.dark-mode .specialties #github img {
-    background-color: #2c2c3c;
+/* Home Section */
+
+#homeContent h1 {
+    font-size: 3rem;
+    color: #2575fc;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease-in-out;
+    position: relative;
 }
 
-/* Dark mode hover effect */
-body.dark-mode .specialties #github img:hover {
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
-}
-/*pp ka css*/
-/* Profile photo container */
-#pp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem auto;
-    width: 200px; /* Fixed width for the profile photo container */
-    height: 200px; /* Fixed height to maintain aspect ratio */
-    border-radius: 50%; /* Makes the container circular */
-    overflow: hidden; /* Ensures the image stays within the circular boundary */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a professional shadow effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover effects */
+#homeContent img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 1rem 0;
+    border: 5px solid #6a11cb;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Image inside the container */
-#pp img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image scales perfectly inside the circle */
-    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+.welcome-message h4 {
+    font-style: italic;
+    color: #666;
 }
 
-/* Hover effect for the container */
-#pp:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for hover effect */
+.thought p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
 }
 
-/* Add dark mode adjustment */
-body.dark-mode #pp {
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1); /* Lighter shadow for dark mode */
+/* Skills Section */
+/* Skills Section */
+#skills {
+    padding: 4rem 2rem;
+    background: #f8f9fa;
 }
 
-body.dark-mode #pp:hover {
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2); /* Enhanced shadow for dark mode */
-}
-
-
-
-
-
-
-@media (max-width: 768px) {
-    #pp {
-        width: 150px; /* Smaller size for mobile */
-        height: 150px;
-    }
-}
-
-@media (max-width: 480px) {
-    #pp {
-        width: 120px; /* Further reduced size for very small screens */
-        height: 120px;
-    }
-}
-
-
-
-
-@media (max-width: 768px) {
-    #homeContent img {
-        max-width: 100px; /* Adjust image size for smaller screens */
-    }
-
-    #homeContent h1 {
-        font-size: 2em; /* Adjust font size for smaller screens */
-    }
-
-    #homeContent h2 {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
-    }
-
-    #homeContent h4 {
-        font-size: 1em; /* Adjust font size for smaller screens */
-    }
-}
-
-.section-content {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-}
-
-.skills-column {
-    flex: 1 1 calc(30% - 20px); /* Ensures responsive columns */
-    background: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+#skills h2 {
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    font-size: 2.5rem;
+    color: #6a1b9a;
+    margin-bottom: 2rem;
 }
 
-.skills-column:hover {
-    transform: scale(1.05);
+/* Skills Row */
+.skills-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
-/* Icon Styling */
-#github img {
-    width: 50px;
-    height: auto;
-    margin: 10px;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-    
+.skills-row.reverse {
+    flex-direction: row-reverse;
 }
 
+/* Skill Images */
+.skill-image {
+    width: 40%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Skill Details */
+.skill-detail {
+    width: 50%;
+}
+
+.skill-detail h3 {
+    font-size: 1.8rem;
+    color: #6a1b9a;
+    margin-bottom: 1rem;
+}
+
+.skill-detail p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+/* Dark Mode */
+body.dark-mode #skills {
+    background: linear-gradient(to bottom right, #2b2b2b, #3a3a3a);
+    color: #e0e0e0;
+}
+
+body.dark-mode #skills h2 {
+    color: #bb86fc;
+}
+
+body.dark-mode .skill-detail h3 {
+    color: #bb86fc;
+}
+
+body.dark-mode .skill-detail p {
+    color: #b0bec5;
+}
+
+body.dark-mode .skill-image {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .skills-column {
-        flex: 1 1 calc(45% - 20px);
+    .skills-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .skills-row.reverse {
+        flex-direction: column;
+    }
+
+    .skill-image, .skill-detail {
+        width: 100%;
     }
 }
 
-@media (max-width: 480px) {
-    .skills-column {
-        flex: 1 1 100%;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    #github img {
-        width: 40px;
-    }
+/* Contact Section */
+#contact form {
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-  /* Dark Mode Styles */
-       /* Dark Mode Styles */
-       .dark-mode {
-    background-color: #111827; /* True black background */
-    color: #fefdfd; /* White text color */
+body.dark-mode #contact form {
+    background: #333;
+    box-shadow: none;
 }
 
-/* Dark Mode for Navigation */
-.dark-mode nav {
-    background-color: #b8b8f8; /* Slightly lighter black for contrast */
-}
-
-.dark-mode .nav-links ul li a {
-    color: #070707; /* White text color for navigation links */
-}
-
-.dark-mode .nav-links ul li a:hover {
-    background-color: #42484b; /* Lighter black for hover effect */
-    color: #f4f3f3;
-}
-
-/* Dark Mode for Sections */
-.dark-mode .section-content {
-    background-color: #111111; /* Slightly lighter black for section backgrounds */
-    color: #ffffff; /* White text color for section content */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.447); /* Soft white shadow */
-}
-
-/* Dark Mode for Home Section */
-.dark-mode #homeContent h1 {
-    color: #fefdfd; /* Near white for headings */
-}
-
-.dark-mode #homeContent span {
-    color: #9333ea; /* Bright color for highlighted text */
-}
-
-.dark-mode .welcome-message h2 {
-    color: #4505f6; /* Bright color for welcome message */
-}
-
-.dark-mode .welcome-message p {
-    color: #fefdfd; /* Near white for welcome message text */
-}
-
-/* Dark Mode for Specialties Section */
-.dark-mode .specialties h2 {
-    color: #4505f6; /* Bright color for specialties heading */
-}
-
-.dark-mode .specialties ol {
-    color: #f3f1f1; /* Near white for list items */
-}
-
-/* Dark Mode for Thought Section */
-.dark-mode .thought h2 {
-    color: #9333ea; /* Bright color for thought heading */
-}
-
-.dark-mode .thought p {
-    color: #fefcfc; /* Near white for thought text */
-    font-style: italic; /* Keep the italic style */
-}
-
-/* Dark Mode for About Section */
-.dark-mode #about h2 {
-    color: #9333ea; /* Bright color for about heading */
-}
-
-.dark-mode #about .section-content h3 {
-    color: #9333ea; /* White text color for subheadings */
-}
-
-.dark-mode #about .section-content p {
-    color: #050505; /* Near white for paragraph text */
-}
-
-/* Dark Mode for Skills Section */
-.dark-mode #skills h2 {
-    color: #9333ea; /* Bright color for skills heading */
-}
-
-.dark-mode #skills .skills-column h3 {
-    color: #9333ea; /* White text color for skills subheadings */
-}
-
-.dark-mode #skills .skills-column ol li {
-    color: #070707; /* Near white for list items */
-}
-
-/* Dark Mode for Portfolio Section */
-.dark-mode #portfolio h2 {
-    color: #0056b3; /* Bright color for portfolio heading */
-}
-
-.dark-mode #portfolio .section-content p {
-    color: #fbf9f9; /* Near white for portfolio content */
-}
-
-/* Dark Mode for Contact Section */
-.dark-mode #contact h2 {
-    color: #9333ea; /* Bright color for contact heading */
-}
-
-.dark-mode #contact .section-content {
-    background-color: #111111; /* Slightly lighter black for contact section background */
-}
-
-.dark-mode #contact form label {
-    color: #ffffff; /* White text color for form labels */
-}
-
-.dark-mode #contact form input,
-.dark-mode #contact form textarea {
-    background-color: #222222; /* Lighter black for input fields */
-    color: #ffffff; /* White text color for input fields */
-    border-color: #333333; /* Slightly lighter border */
-}
-
-.dark-mode #contact form input[type="submit"] {
-    background-color: #4505f6; /* Purple background for submit button */
-    color: #ffffff; /* White text color for submit button */
-}
-
-.dark-mode #contact form input[type="submit"]:hover {
-    background-color: #3a04d1; /* Slightly darker purple on hover */
-}
-.dark-mode #contact form input[type="Reset"] {
-    background-color: #4505f6; /* Purple background for submit button */
-    color: #ffffff; /* White text color for submit button */
-}
-.dark-mode #contact form input[type="Reset"]:hover {
-    background-color: #3a04d1; /* Slightly darker purple on hover */
-}
-.dark-mode #skills .section-content {
-    background-color: #222222;
-    color: #ffffff;
-}
-.dark-mode #about .section-content {
-    background-color: #222222;
-    color: #ffffff;
-}
-.dark-mode #about .section-content p {
-    font-size: 18px;
-    color: #ffffff;
-    margin-bottom: 20px;
-} 
-.dark-mode .logo {
-    font-size: 25px;
+#contact form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
     font-weight: bold;
-    color: #060606;
 }
-#github {
+
+#contact form input, #contact form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+body.dark-mode #contact  body.dark-mode #contact form textarea {
+    border: 2px solid #555;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: #eee;
+}
+
+#contact form input[type="submit"] {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+#contact form input[type="submit"]:hover {
+    transform: scale(1.1);
+}
+#contact form input[type="Reset"] {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+#contact form input[type="Reset"]:hover {
+    transform: scale(1.1);
+}
+
+/* Social Menu */
+.social-menu ul {
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-    
-    /*padding: 10px;
-    /*background-color: #f5f5f5;  Light gray background */
-    /*border-radius: 8px; /* Rounded corners */
-    /*width: 50px;
-    height: 50px;
-    cursor: pointer; /* Pointer cursor to indicate it's clickable */
+    margin-top: 2rem;
+    list-style: none;
 }
 
-#github img {
-    width: 200%;
-    height: auto;
-    max-width: 80px; /* Ensure the icon isn't too large */
-    max-height: 80px;
-}
-/* General Section Styling */
-/* General Section Styling */
-#portfolio {
-    padding: 50px 20px; /* Adds padding inside the section for spacing */
-    background-color: #f4f4f4; /* Light grey background color for the section */
-    border-radius: 8px; /* Rounds the corners of the section */
-    margin: auto; /* Centers the section horizontally */
-    text-align: center; /* Centers all text elements within the section */
-    max-width: 600px; /* Sets a maximum width for the section */
-    position: absolute; /* Positions the section absolutely */
-    top: 50%; /* Moves the section down to 50% of the viewport height */
-    left: 50%; /* Moves the section to 50% of the viewport width */
-    transform: translate(-50%, -50%); /* Centers the section vertically and horizontally */
+.social-menu ul li {
+    margin: 0 1rem;
 }
 
-/* Heading Styling */
-#portfolio h2 {
-    font-size: 28px; /* Sets the font size of the heading text */
-    color: #333; /* Dark grey color for the heading text */
-    margin-bottom: 20px; /* Adds space below the heading */
-    font-weight: 600; /* Makes the heading text semi-bold */
+.social-menu ul li a {
+    color: #6a11cb;
+    font-size: 4.0rem;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Link Styling */
-#portfolio a {
-    display: inline-block; /* Makes the link behave like an inline element, allowing it to be centered */
-    font-size: 18px; /* Sets the font size for the link text */
-    color: #007BFF; /* Blue color for the link text */
-    text-decoration: none; /* Removes the underline from the link */
-    margin: 10px 0; /* Adds vertical spacing between the link and other elements */
-    padding: 10px 15px; /* Adds padding around the link text */
-    background-color: #e7f3ff; /* Light blue background color for the link */
-    border-radius: 5px; /* Rounds the corners of the link */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect when hovering over the link */
+.social-menu ul li a:hover {
+    transform: scale(1.2);
+    color: #2575fc;
 }
 
-/* Hover Effect for Link */
-#portfolio a:hover {
-    background-color: #0056b3; /* Changes the background color to darker blue when hovered */
-    color: #fff; /* Changes the text color to white when hovered */
+/* Footer */
+div b p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 1rem 0;
 }
 
-/* Paragraph Styling */
-#portfolio .section-content p {
-    font-size: 16px; /* Sets the font size for the paragraph text */
-    color: #666; /* Medium grey color for the paragraph text */
-    margin-top: 15px; /* Adds space above the paragraph */
-    font-style: italic; /* Makes the paragraph text italic */
-}
-
-/* Dark Mode Styling */
-.dark-mode #portfolio {
-    background-color: #fdfcfc; /* Dark grey background for the section */
-    color: #070707; /* Light grey text color for the section */
-}
-
-.dark-mode #portfolio h2 {
-    color: #040404; /* Light grey color for the heading text */
-}
-
-.dark-mode #portfolio a {
-    color: #1e90ff; /* Lighter blue color for the link text */
-    background-color: #030303; /* Darker grey background for the link */
-}
-
-.dark-mode #portfolio a:hover {
-    background-color: #0056b3; /* Keeps the hover background color the same */
-    color: #fff; /* Keeps the hover text color the same */
-}
-/* Styling for the image */
-#homeContent img {
-    max-width: 150px; /* Limits the width of the image */
-    height: auto; /* Maintains the aspect ratio */
-    border-radius: 50%; /* Makes the image circular */
-    border: 3px solid #1404f8; /* Adds a border around the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
-    margin: 20px auto; /* Centers the image horizontally and adds vertical spacing */
-    display: block; /* Ensures the image behaves as a block-level element */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    #homeContent img {
-        max-width: 100px; /* Adjust image size for smaller screens */
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
-
-    #homeContent h1 {
-        font-size: 2em; /* Adjust font size for smaller screens */
-    }
-
-    #homeContent h2 {
-        font-size: 1.5em; /* Adjust font size for smaller screens */
-    }
-
-    #homeContent h4 {
-        font-size: 1em; /* Adjust font size for smaller screens */
-    }
-}
-/* Container for the images */
-#github {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    gap: 15px; /* Adds consistent spacing between images */
-}
-
-/* Style for the images */
-#github img {
-    width: 60px; /* Maintains the image size */
-    height: auto;
-    margin: 5px;
-    border-radius: 15px; /* More rounded corners for a smoother look */
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), 
-                box-shadow 0.4s ease-in-out, 
-                filter 0.4s ease-in-out; /* Adds a bouncy transition */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow */
-    cursor: pointer; /* Changes cursor to indicate interactivity */
-}
-
-/* Hover effect with bounce animation */
-#github img:hover {
-    transform: scale(1.3) rotate(8deg); /* Larger scale and rotation for hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* More pronounced shadow for depth */
-    filter: brightness(1.1); /* Slightly brightens the image */
-}
-
-/* Floating effect for continuous subtle motion */
-@keyframes float {
-    0%, 100% {
+    to {
+        opacity: 1;
         transform: translateY(0);
     }
-    50% {
-        transform: translateY(-10px); /* Increased bounce height */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-/* Applying floating animation */
-#github img {
-    animation: float 3s ease-in-out infinite; /* Continuous floating motion */
-}
-
-/* Focus and active state for images */
-#github img:focus, #github img:active {
-    transform: scale(1.35) rotate(10deg); /* Larger scale and more rotation */
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5); /* Heavier shadow on focus */
-    outline: none; /* Removes default outline */
-}
-
-/* Glow effect on hover */
-#github img:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.6); /* Adds a glow effect */
-}
-
-
-
-
-
-
-
-    #darkModeToggle {
-        cursor: pointer;
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        background: linear-gradient(90deg, #6a11cb, #2575fc);
+        top: 60px;
+        right: 0;
+        width: 100%;
     }
 
-    @media (max-width: 768px) {
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 60px;
-            right: 0;
-            width: 200px;
-            background-color: #cfc9c9;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        .nav-links ul {
-            flex-direction: column;
-            width: 100%;
-        }
-
-        .nav-links li {
-            text-align: center;
-            width: 100%;
-            padding: 15px 0;
-            margin: 5px 0;
-        }
-
-        .menu-toggle {
-            display: flex;
-        }
+    .nav-links ul li {
+        margin: 1rem 0;
     }
-    .nav-links.active {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.active + .nav-links ul {
         display: flex;
     }
-    .section {
-        padding: 60px;
-        min-height: 100vh;
+
+    .skills-column {
+        width: 100%;
+        margin: 1.5rem 0;
     }
-   /*.output {
-            position: sticky;
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-            white-space: pre-wrap;
-        }
-/* Navbar styles */
+}
 .output {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-            white-space: pre-wrap;
-            min-height: 50px; /* Fixed height to maintain space */
-            /* Hide initially until content is ready */
-        }
-
-
-       
-/* General styling for the avatar image */
-/* General styling for the avatar image */
-img[alt="Avatar"] {
-    width: 120px; /* Adjust size as desired */
-    height: auto;
-    border-radius: 50%; /* Makes the image circular */
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), 
-                filter 0.4s ease-in-out; /* Bouncy transformation */
-    cursor: pointer; /* Changes cursor to pointer */
-    margin: 10px; /* Adds spacing around the image */
-    animation: float 3s ease-in-out infinite; /* Continuous subtle floating */
-}
-
-/* Hover effect for the avatar */
-img[alt="Avatar"]:hover {
-    transform: scale(1.2) rotate(5deg); /* Enlarges and slightly rotates */
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); /* More pronounced shadow */
-    filter: brightness(1.1); /* Slightly brightens the image */
-}
-
-/* Floating effect for subtle motion */
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-5px); /* Adjust height of float as desired */
-    }
-}
-
-
-
-
-
-
-        
-        
-        
+    min-height: 50px; /* Adjust the height based on your design */
+    display: block;
+    font-size: 7.0mm;
     
-</style>
+     /* Keep the space occupied, but hide the content */
+}
 
-<!-- Embedded JavaScript for functionality -->
+
+
+
+
+
+</style>
+    
 <script>
     /* Get references to DOM elements */
     const menuToggle = document.getElementById('menuToggle');
@@ -1592,7 +726,7 @@ img[alt="Avatar"]:hover {
         nav.classList.toggle('dark-mode');
     });
 
-    /* Smooth scroll to the corresponding section when a navigation link is clicked */
+    /*Smooth scroll to the corresponding section when a navigation link is clicked */
     function showSection(sectionId) {
         document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
     }
@@ -1625,6 +759,15 @@ img[alt="Avatar"]:hover {
             }
         }
     }
+   /*// Example to show the output after content is ready
+const outputElement = document.querySelector('.output');
+
+// Add content dynamically
+outputElement.textContent = "";
+
+// After content is set, make it visible and trigger the animation
+outputElement.classList.add('show');*/
+
 
     async function startSentence(sentence) {
         let outputDiv = document.getElementById('output');
@@ -1670,6 +813,30 @@ img[alt="Avatar"]:hover {
     window.onload = async function() {
         await startProcess();
     };
+
+    // Show the button after scrolling down 100px
+    window.onscroll = function () {
+                    const scrollToTopButton = document.getElementById("scrollToTop");
+                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                      scrollToTopButton.style.display = "flex"; // Use "flex" for proper alignment
+                    } else {
+                      scrollToTopButton.style.display = "none";
+                    }
+                  };
+                  
+                  // Scroll to top when the button is clicked
+                  document.getElementById("scrollToTop").onclick = function () {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  };
+                  document.getElementById("game-space-btn").addEventListener("click", function() {
+                window.location.href = "https://vivekx11.github.io/GameSpace/";  // Replace with your URL
+              });
+              document.getElementById("game-space-btn").addEventListener("click", function() {
+    window.location.href = "https://viveks2907.github.io/WT.frontend./";  // Replace with your URL
+  });
+  document.getElementById("game-space-btn").addEventListener("click", function() {
+    window.location.href = "https://vivekx11.github.io/memorygame/";  // Replace with your URL
+  });
 
 </script>
 </html>
