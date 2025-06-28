@@ -1,842 +1,800 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Metadata and external stylesheet links -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=800">
-    <title>VIVEK.PORTFOLIO</title>
-    <!-- Link to external stylesheet for custom styles -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Link to Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-    <!-- Navigation bar -->
-    <nav>
-        <!-- Logo section of the navigation bar -->
-        <div class="logo">
-            <!-- The logo text, with different colors applied to "VIVEK" and "PORTFOLIO" -->
-            <span style="color: #f9af03;">"VIVEK"</span><br> <span style="color: #f9af03;">"PORTFOLIO"</span>
-        </div>
-        <!-- Menu toggle button for smaller screens -->
-        <div class="menu-toggle" id="menuToggle">
-            <!-- Icon for the menu toggle (hamburger menu) -->
-            <i class="fas fa-bars"></i>
-        </div>
-        <!-- Navigation links -->
-        <div class="nav-links" id="navLinks">
-            <ul>
-                <!-- Navigation items with icons for each section -->
-                <li><a onclick="showSection('home')"><i class="fas fa-home"></i></a></li>
-                <li><a onclick="showSection('about')">ABOUT</a></li>
-                <li><a onclick="showSection('skills')">SKILLS</a></li>
-                <li><a onclick="showSection('contact')">CONTACT</a></li>
-                <!-- Dark mode toggle button -->
-                <li><a id="darkModeToggle"><i class="fas fa-moon"></i></a></li>
-            </ul>
-        </div>
-    </nav>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=450">
+  <title>Snippet Wizard Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <!-- Sections of the website corresponding to the navigation links -->
-        <div id="homeContent" class="section">
-            <h1><span style="color: #2196F3;">'HEY,👋ITS'<br>"VIVEK SAWJI"</h1></span>
-    
-            <div id="pp">
-                <img src="teacher-man-avatar-icon-illustration-vector-style_131965-958.avif" alt="profilephoto">
-            <b>
-            </div>
-            <h3> I AM </h3>
-            <h3>
-                <div class="output" id="output"></div>
-            </h3>
-            
-        </b>
-                
-                
-    
-            <div class="welcome-message">
-                <h2>"WELCOME"</h2>
-                <h4>
-                    <p>~"I'm passionate about turning ideas into reality through code".
-                        Let's build something amazing together!~</p>
-                </h4>
-                </div>
-                <div class="thought">
-                <h4>
-                    <i>"Code is like humor. When you have to explain it, it’s bad." </p>
-                        <P>- Cory House</i><BR>
-                </h4>
-                   
-                </div>
-            
-           
-                <div class="specialties">
-                <h2>"skills"</h2>
-                <div id="github">
-                    <img src="python-svgrepo-com.svg" alt="python">
-                    <img src="java-4-logo-svgrepo-com.svg" alt="java">
-                    <img src="c-logo-svgrepo-com.svg" alt="c++">
-                    <img src="html-5-logo-svgrepo-com.svg" alt="html">
-                    <img src="css3-logo-svgrepo-com.svg" alt="css">
-                    <img src="javascript-logo-svgrepo-com.svg" alt="javascript">
-                    <img src="mysql-logo-svgrepo-com.svg" alt="sql">
-                    <img src="kotlin-1-logo-svgrepo-com.svg" alt="kotlin">
-                    <img src="nodejs-1-logo-svgrepo-com.svg" alt="node.js">
-                    <img src="php-logo-svgrepo-com.svg" alt="php">
-                    <img src="react-logo-svgrepo-com.svg" alt="react">
-                <h2>"tool/editor"</h2>
-                    <img src="intellij-idea-svgrepo-com.svg" alt="intellij">
-                    <img src="visual-studio-code-logo-svgrepo-com.svg" alt="vs code">
-                    <img src="github-icon-1-logo-svgrepo-com.svg" alt="github">
-                    <img src="icons8-android-studio.svg" alt="andriodstudio">
-                </div>
-                </div>
-                </div>
-           
-                <button class="Btn" id="scrollToTop">
-                    <svg height="1.5cm" width="1.5cm" class="arrow" viewBox="0 0 512 512">
-                      <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
-                    </svg>
-                    <span class="tooltip">Back to Top</span>
-                    <style>
-                        /* Scroll-to-Top Button */
-                        .Btn {
-                          width: 110px; /* Increase button size for the larger arrow */
-                          height: 110px;
-                          background: linear-gradient( #6a11cb, #2575fc);
-                          display: flex;
-                          align-items: center;
-                          justify-content: center;
-                          border-radius: 50%;
-                          cursor: pointer;
-                          position: fixed;
-                          bottom: 20px;
-                          right: 20px;
-                          border: none;
-                          display: none; /* Initially hidden */
-                          z-index: 1000;
-                        }
-                        
-                        .arrow path {
-                          fill: white;
-                        }
-                        
-                        /* Tooltip styling */
-                        .tooltip {
-                          position: absolute;
-                          bottom: 170px; /* Adjust for the larger button */
-                          background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-                          color: white;
-                          padding: 15px 10px;
-                          border-radius: 115px;
-                          font-size: 1.8em;
-                          white-space: nowrap;
-                          opacity: 0;
-                          visibility: hidden;
-                          transition: opacity 0.3s, visibility 0.3s;
-                        }
-                        
-                        .Btn:hover .tooltip {
-                          opacity: 1;
-                          visibility: visible;
-                        }
-                        
-                        .Btn:hover .arrow {
-                          animation: slide-in-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-                        }
-                        
-                        @keyframes slide-in-bottom {
-                          0% {
-                            transform: translateY(10px);
-                            opacity: 0;
-                          }
-                          100% {
-                            transform: translateY(0);
-                            opacity: 1;
-                          }
-                        }
-                        </style>
-                  </button>              
-<div id="about" class="section">
-        <h2>"ABOUT ME" </h2>
-        <div class="section-content">
-            <h3>~INTRODUCTION~</h3>
-            <p>I am Vivek Sawji, a dedicated and passionate developer with a keen interest in creating efficient and scalable solutions. With a strong foundation in computer science, I continuously strive to expand my knowledge and skills.</p>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      min-height: 100vh;
+      transition: background 0.4s ease, color 0.4s ease;
+      scroll-behavior: smooth;
+    }
 
-            <h3>~PROFESSIONAL DETAILS~</h3>
-            <p>I have experience in developing web applications using modern technologies and frameworks. My expertise lies in backend development, but I am also proficient in frontend technologies, enabling me to build full-stack applications.</p>
+    body.light-mode {
+      background: #0D1B1E;
+      color: #6FFFD3;
+    }
 
-            <h3>~PERSONAL DETAILS~</h3>
-            <p>Outside of coding, I enjoy playing game, traveling, and exploring new technologies. I believe in lifelong learning and am always eager to take on new challenges.</p>
+    body.dark-mode {
+      background: white;
+      color: #01885f;
+    }
 
-            <h3>~EDUCTION~</h3>
-            <p>Bachelor of science in Computer Science - Mumbai University</p>
+    .sidebar {
+      width: 280px;
+      background: linear-gradient(45deg, #6c49f5, #02ccff, #6FFFD3, #6c49f5, #02ccff);
+      color: #101110;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 5px;
+      position: fixed;
+      height: 100%;
+      box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+      transition: width 0.3s ease;
+      z-index: 1000;
+    }
 
-            <h3>~EXPERIENCE~</h3>
-            <p>Worked on various projects spanning over 6-8 months, including internships and freelance work.</p>
+    .sidebar.collapsed {
+      width: 80px;
+    }
 
-        </div>
-    </div>
+    .toggle-btn {
+      align-self: flex-end;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      cursor: pointer;
+      color: #fff;
+      transition: transform 0.3s ease;
+    }
 
-            
-            
-            
-             <!--<h3>PROJECTS</h3><br>
-            <P>1.STONE,PAPER,SICSSOR & GUESS THE NUMBER</P>
-            <a href="https://vivekx11.github.io/GameSpace/" target="_blank">
-                <button> GAME_SPACE
-                </button>
-            </a>
-<P>2.WATER TESTING WEBPAGE(FRONTEND)</P>
-<a href="https://viveks2907.github.io/WT.frontend./" target="_blank">
-    <button> WATER TESTING
-    </button>
-</a>
-<P>3.MEMORYGAME</P>
-<a href="https://vivekx11.github.io/memorygame/" target="_blank">
-    <button> MEMORYGAME
-    </button>
-</a>
-</div>
-</div>-->
+    .toggle-btn i.rotate {
+      transform: rotate(180deg);
+    }
 
+    .switch {
+      font-size: 17px;
+      position: relative;
+      display: inline-block;
+      width: 3.5em;
+      height: 2em;
+    }
 
-<div id="skills" class="section">
-    <h2>"PROJECTS"</h2>
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
 
-    <div class="skills-row">
-        <img src="memory.jpg" alt="Python" class="skill-image">
-        <div class="skill-detail">
-            <h3>MEMORYGAME</h3>
-            <p>click the button to play the game *SOON I WILL ADD IT*</p>
-        </div>
-    </div>
+    .slider {
+      --background: #28096b;
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--background);
+      transition: .5s;
+      border-radius: 30px;
+    }
 
-    <div class="skills-row reverse">
-        <div class="skill-detail">
-            <h3>GAME SPACE </h3>
-            <p>there are 2 type of game on it stone,paper,sicssor</p>
-            <p>the second one is gusse the number *WORK IN PROGRESS* </p>
-        </div>
-        <img src="gamespace.jpg" alt="Java" class="skill-image">
-    </div>
- <!--
-    <div class="skills-row">
-        <img src="c-logo-svgrepo-com.svg" alt="C++" class="skill-image">
-        <div class="skill-detail">
-            <h3>C++</h3>
-            <p>C++ is widely used for competitive programming and game development.</p>
-        </div>
-    </div>
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 1.4em;
+      width: 1.4em;
+      border-radius: 50%;
+      left: 10%;
+      bottom: 15%;
+      box-shadow: inset 8px -4px 0px 0px #fff000;
+      background: var(--background);
+      transition: .5s;
+    }
 
-    <div class="skills-row reverse">
-        <div class="skill-detail">
-            <h3>HTML & CSS</h3>
-            <p>HTML and CSS are foundational for creating structured and visually appealing websites.</p>
-        </div>
-        <img src="html-5-logo-svgrepo-com.svg" alt="HTML" class="skill-image">
-    </div>
+    input:checked + .slider {
+      background-color: #522ba7;
+    }
 
-    Add more rows as needed -->
-</div>
+    input:checked + .slider:before {
+      transform: translateX(1.5em);
+      box-shadow: inset 15px -4px 0px 15px #fff000;
+    }
 
-                    <!-- Container for images -->
+    .profile {
+      text-align: center;
+      margin: 20px 0;
+    }
 
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #e94560;
+      object-fit: cover;
+      transition: all 0.3s ease;
+    }
 
-        <div id="contact" class="section">
-            <h2>"CONTACT ME"</h2>
-            <div class="section-content">
-                <form action="https://getform.io/f/bmddyxna" method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email ID</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                    
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                </form>
-            </div>
-            <div class="social-menu">
-                <ul>
-                    <li>
-                        <a href="https://github.com/vivekx11" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/vivekx___" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:viveksawji@gmail.com">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/viveksawji" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        <b><DIV>
-            <p>&copy; 2024 Vivek Sawji. All Rights Reserved.</p>
-            <p>Create by "viveksawji"</p>
-        </DIV>
-    </b>
-    
-    </div>
-    </div>
-    </div>
-    
-    <!-- Link to external JavaScript file -->
-    <script src="script.js"></script>
-</body>
+    .aurora-text {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-top: 15px;
+      background: linear-gradient(90deg, #02fc6a, #d4fe02, #1ffc02);
+      background-size: 200%;
+      color: transparent;
+      -webkit-background-clip: text;
+      animation: auroraAnimation 4s infinite linear;
+    }
 
-<!-- Embedded CSS for styling the webpage -->
-<style>
-    /* General Styles */
-/* Universal Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease-in-out;
-    scroll-behavior: smooth;
-}
+    @keyframes auroraAnimation {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
 
-/* Body Styling background: linear-gradient(to bottom right, #f0f0f0, #e6e6e6);*/
-body {
-    background-color: #f4f1f8;
-    color: #333;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
+    .sidebar.collapsed .profile-pic {
+      width: 60px;
+      height: 60px;
+    }
 
-/* Dark Mode */
-body.dark-mode {
-    background: linear-gradient(to bottom right, #121212, #1e1e1e);
-    color: #e0e0e0;
-}
+    .sidebar.collapsed .aurora-text {
+      display: none;
+    }
 
-/* Navigation Bar */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+    .menu {
+      list-style: none;
+      width: 100%;
+    }
 
-.logo {
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    animation: fadeIn 1.5s ease-in-out;
-}
+    .menu li {
+      margin: 20px 0;
+    }
 
-.nav-links ul {
-    display: flex;
-    list-style: none;
-}
+    .menu a {
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
 
-.nav-links ul li {
-    margin: 0 1rem;
-    position: relative;
-}
+    .menu a:hover, .menu a.active {
+      background: #ed536d;
+      transform: translateX(5px);
+    }
 
-.nav-links ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
+    .menu .icon {
+      font-size: 1.5rem;
+      margin-right: 15px;
+    }
 
-.nav-links ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.1);
-}
+    .sidebar.collapsed .menu a span.text {
+      display: none;
+    }
 
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
+    .sidebar.collapsed .menu .icon {
+      margin-right: 0;
+      text-align: center;
+      width: 100%;
+    }
 
-/* Dark Mode Toggle */
-#darkModeToggle i {
-    cursor: pointer;
-    font-size: 1.5rem;
-}
+    .content {
+      margin-left: 280px;
+      padding: 30px;
+      flex: 1;
+      transition: margin-left 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-/* Sections */
-.section {
-    padding: 5rem 2rem;
-    text-align: center;
-    background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
-    border-radius: 10px;
-    margin: 2rem auto;
-    width: 90%;
-    max-width: 1200px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    animation: fadeInUp 1.5s ease-in-out;
-}
+    .sidebar.collapsed ~ .content {
+      margin-left: 80px;
+    }
 
-body.dark-mode .section {
-    background: linear-gradient(to bottom right, #2b2b2b, #3a3a3a);
-}
+    section.section {
+      padding: 60px 20px;
+      min-height: 100vh;
+      transition: background 0.4s ease;
+      width: 100%;
+      max-width: 1200px;
+    }
 
-.section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #6a11cb;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
+    .greeting {
+      font-size: 2rem;
+      margin-top: 15px;
+      animation: fadeIn 1s ease-in-out;
+    }
 
-.section p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #555;
-}
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-body.dark-mode .section p {
-    color: #ccc;
-}
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #6a11cb;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      text-align: center;
+    }
 
-/* Home Section */
+    .section p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: #555;
+    }
 
-#homeContent h1 {
-    font-size: 3rem;
-    color: #2575fc;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    animation: fadeIn 1.5s ease-in-out;
-    position: relative;
-}
+    body.dark-mode .section p {
+      color: #ccc;
+    }
 
-#homeContent img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 1rem 0;
-    border: 5px solid #6a11cb;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
+    /* Home Section */
+    #home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
 
-.welcome-message h4 {
-    font-style: italic;
-    color: #666;
-}
+    #home h1 {
+      font-size: 3rem;
+      color: #2575fc;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
 
-.thought p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-}
+    #home img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 1rem 0;
+      border: 5px solid #6a11cb;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
 
-/* Skills Section */
-/* Skills Section */
-#skills {
-    padding: 4rem 2rem;
-    background: #f8f9fa;
-}
+    .welcome-message h4 {
+      font-style: italic;
+      color: #666;
+    }
 
-#skills h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #6a1b9a;
-    margin-bottom: 2rem;
-}
+    .thought p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
 
-/* Skills Row */
-.skills-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
+    .output {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #6a11cb;
+      min-height: 50px;
+    }
 
-.skills-row.reverse {
-    flex-direction: row-reverse;
-}
+    /* Skills Section */
+    #skills {
+      padding: 4rem 2rem;
+      background: #f8f9fa;
+    }
 
-/* Skill Images */
-.skill-image {
-    width: 40%;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    #skills h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #6a1b9a;
+      margin-bottom: 2rem;
+    }
 
-.skill-image:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* Skill Details */
-.skill-detail {
-    width: 50%;
-}
-
-.skill-detail h3 {
-    font-size: 1.8rem;
-    color: #6a1b9a;
-    margin-bottom: 1rem;
-}
-
-.skill-detail p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-}
-/* Dark Mode */
-body.dark-mode #skills {
-    background: linear-gradient(to bottom right, #2b2b2b, #3a3a3a);
-    color: #e0e0e0;
-}
-
-body.dark-mode #skills h2 {
-    color: #bb86fc;
-}
-
-body.dark-mode .skill-detail h3 {
-    color: #bb86fc;
-}
-
-body.dark-mode .skill-detail p {
-    color: #b0bec5;
-}
-
-body.dark-mode .skill-image {
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
     .skills-row {
-        flex-direction: column;
-        text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 2rem;
     }
 
     .skills-row.reverse {
-        flex-direction: column;
+      flex-direction: row-reverse;
     }
 
-    .skill-image, .skill-detail {
+    .skill-image {
+      width: 40%;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-image:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .skill-detail {
+      width: 50%;
+    }
+
+    .skill-detail h3 {
+      font-size: 1.8rem;
+      color: #6a1b9a;
+      margin-bottom: 1rem;
+    }
+
+    .skill-detail p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    body.dark-mode #skills {
+      background: linear-gradient(to bottom right, #2b2b2b, #3a3a3a);
+      color: #e0e0e0;
+    }
+
+    body.dark-mode #skills h2 {
+      color: #bb86fc;
+    }
+
+    body.dark-mode .skill-detail h3 {
+      color: #bb86fc;
+    }
+
+    body.dark-mode .skill-detail p {
+      color: #b0bec5;
+    }
+
+    .specialties img {
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .specialties img:hover {
+      transform: scale(1.2);
+    }
+
+    /* Contact Section */
+    #contact form {
+      width: 80%;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    body.dark-mode #contact form {
+      background: #333;
+      box-shadow: none;
+    }
+
+    #contact form label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+      font-weight: bold;
+    }
+
+    #contact form input,
+    #contact form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    body.dark-mode #contact form input,
+    body.dark-mode #contact form textarea {
+      border: 2px solid #555;
+      background: #444;
+      color: #eee;
+    }
+
+    #contact form input[type="submit"],
+    #contact form input[type="reset"] {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      color: white;
+      border: none;
+      cursor: pointer;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+      margin-right: 1rem;
+    }
+
+    #contact form input[type="submit"]:hover,
+    #contact form input[type="reset"]:hover {
+      transform: scale(1.1);
+    }
+
+    .social-menu ul {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      list-style: none;
+    }
+
+    .social-menu ul li {
+      margin: 0 1rem;
+    }
+
+    .social-menu ul li a {
+      color: #6a11cb;
+      font-size: 2rem;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-menu ul li a:hover {
+      transform: scale(1.2);
+      color: #2575fc;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin: 1rem 0;
+    }
+
+    /* Scroll-to-Top Button */
+    .Btn {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(#6a11cb, #2575fc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      border: none;
+      z-index: 2000; /* Increased z-index to ensure visibility */
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    .arrow path {
+      fill: white;
+    }
+
+    .tooltip {
+      position: absolute;
+      bottom: 70px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    .Btn:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .Btn:hover .arrow {
+      animation: slide-in-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    @keyframes slide-in-bottom {
+      0% { transform: translateY(10px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .sidebar {
         width: 100%;
-    }
-}
+        height: auto;
+        position: relative;
+      }
 
-/* Contact Section */
-#contact form {
-    width: 80%;
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 2rem;
-    border-radius: 10px;
-    background: white;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-body.dark-mode #contact form {
-    background: #333;
-    box-shadow: none;
-}
-
-#contact form label {
-    display: block;
-    margin: 0.5rem 0 0.2rem;
-    font-weight: bold;
-}
-
-#contact form input, #contact form textarea {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-}
-
-body.dark-mode #contact  body.dark-mode #contact form textarea {
-    border: 2px solid #555;
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    color: #eee;
-}
-
-#contact form input[type="submit"] {
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-}
-
-#contact form input[type="submit"]:hover {
-    transform: scale(1.1);
-}
-#contact form input[type="Reset"] {
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
-}
-
-#contact form input[type="Reset"]:hover {
-    transform: scale(1.1);
-}
-
-/* Social Menu */
-.social-menu ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    list-style: none;
-}
-
-.social-menu ul li {
-    margin: 0 1rem;
-}
-
-.social-menu ul li a {
-    color: #6a11cb;
-    font-size: 4.0rem;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-menu ul li a:hover {
-    transform: scale(1.2);
-    color: #2575fc;
-}
-
-/* Footer */
-div b p {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #6b7280;
-    margin: 1rem 0;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Styling */
-@media (max-width: 768px) {
-    .nav-links ul {
-        flex-direction: column;
-        display: none;
-        position: absolute;
-        background: linear-gradient(90deg, #6a11cb, #2575fc);
-        top: 60px;
-        right: 0;
+      .sidebar.collapsed {
         width: 100%;
-    }
+      }
 
-    .nav-links ul li {
-        margin: 1rem 0;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu-toggle.active + .nav-links ul {
+      .content {
+        margin-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 20px;
+        width: 100%;
+        max-width: 100%;
         display: flex;
-    }
+        justify-content: center;
+        align-items: center;
+      }
 
-    .skills-column {
+      .sidebar.collapsed ~ .content {
+        margin-left: 0;
+      }
+
+      .skills-row {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .skills-row.reverse {
+        flex-direction: column;
+      }
+
+      .skill-image, .skill-detail {
         width: 100%;
-        margin: 1.5rem 0;
+      }
     }
-}
-.output {
-    min-height: 50px; /* Adjust the height based on your design */
-    display: block;
-    font-size: 7.0mm;
-    
-     /* Keep the space occupied, but hide the content */
-}
 
+    /* Animations */
+    .invisible {
+      opacity: 0;
+      transform: translateY(40px);
+    }
 
+    .fade-in {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+  </style>
+</head>
+<body class="light-mode">
+  <div class="sidebar" id="sidebar">
+    <div class="toggle-btn" onclick="toggleSidebar(this)" aria-label="Toggle Sidebar">
+      <i class="fas fa-chevron-left" id="toggleIcon"></i>
+    </div>
+    <label class="switch" aria-label="Toggle Theme">
+      <input type="checkbox" onchange="toggleTheme()">
+      <span class="slider"></span>
+    </label>
+    <div class="profile">
+      <img src="1749791518729.jpg" alt="Profile Picture" class="profile-pic">
+      <div class="aurora-text">SNIPPET WIZARD<br><p>~EnjoyCodes~</p></div>
+    </div>
+    <ul class="menu">
+      <li><a href="#home" onclick="scrollToSection(event, 'home')" class="active"><span class="icon"><i class="fas fa-home"></i></span><span class="text">Home</span></a></li>
+      <li><a href="#about" onclick="scrollToSection(event, 'about')"><span class="icon"><i class="fas fa-info-circle"></i></span><span class="text">About</span></a></li>
+      <li><a href="#project" onclick="scrollToSection(event, 'project')"><span class="icon"><i class="fas fa-briefcase"></i></span><span class="text">Project</span></a></li>
+      <li><a href="#contact" onclick="scrollToSection(event, 'contact')"><span class="icon"><i class="fas fa-phone-alt"></i></span><span class="text">Contact</span></a></li>
+    </ul>
+  </div>
 
+  <div class="content">
+    <section id="home" class="section">
+      <h1><span style="color: #2196F3;">'HEY,👋ITS'<br>"VIVEK SAWJI"</span></h1>
+      <img src="teacher-man-avatar-icon-illustration-vector-style_131965-958.avif" alt="Profile Photo">
+      <h3>I AM</h3>
+      <div class="output" id="output"></div>
+      <div class="welcome-message">
+        <h2>"WELCOME"</h2>
+        <h4>
+          <p>~"I'm passionate about turning ideas into reality through code". Let's build something amazing together!~</p>
+        </h4>
+      </div>
+      <div class="thought">
+        <h4>
+          <i>"Code is like humor. When you have to explain it, it’s bad."</i><br>
+          <p>- Cory House</p>
+        </h4>
+      </div>
+      <div class="specialties">
+        <h2>"Skills"</h2>
+        <div id="github">
+          <img src="python-svgrepo-com.svg" alt="Python">
+          <img src="java-4-logo-svgrepo-com.svg" alt="Java">
+          <img src="c-logo-svgrepo-com.svg" alt="C++">
+          <img src="html-5-logo-svgrepo-com.svg" alt="HTML">
+          <img src="css3-logo-svgrepo-com.svg" alt="CSS">
+          <img src="javascript-logo-svgrepo-com.svg" alt="JavaScript">
+          <img src="mysql-logo-svgrepo-com.svg" alt="SQL">
+          <img src="kotlin-1-logo-svgrepo-com.svg" alt="Kotlin">
+          <img src="nodejs-1-logo-svgrepo-com.svg" alt="Node.js">
+          <img src="php-logo-svgrepo-com.svg" alt="PHP">
+          <img src="react-logo-svgrepo-com.svg" alt="React">
+        </div>
+        <h2>"Tools/Editors"</h2>
+        <div>
+          <img src="intellij-idea-svgrepo-com.svg" alt="IntelliJ">
+          <img src="visual-studio-code-logo-svgrepo-com.svg" alt="VS Code">
+          <img src="github-icon-1-logo-svgrepo-com.svg" alt="GitHub">
+          <img src="icons8-android-studio.svg" alt="Android Studio">
+        </div>
+      </div>
+      <button class="Btn" id="scrollToTop" aria-label="Scroll to Top">
+        <svg height="1.5em" width="1.5em" class="arrow" viewBox="0 0 512 512">
+          <path d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
+        </svg>
+        <span class="tooltip">Back to Top</span>
+      </button>
+    </section>
 
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <h3>~INTRODUCTION~</h3>
+          <p>I am Vivek Sawji, a dedicated and passionate developer with a keen interest in creating efficient and scalable solutions. With a strong foundation in computer science, I continuously strive to expand my knowledge and skills.</p>
+          <h3>~PROFESSIONAL DETAILS~</h3>
+          <p>I have experience in developing web applications using modern technologies and frameworks. My expertise lies in backend development, but I am also proficient in frontend technologies, enabling me to build full-stack applications.</p>
+          <h3>~PERSONAL DETAILS~</h3>
+          <p>Outside of coding, I enjoy playing games, traveling, and exploring new technologies. I believe in lifelong learning and am always eager to take on new challenges.</p>
+          <h3>~EDUCATION~</h3>
+          <p>Bachelor of Science in Computer Science - Mumbai University</p>
+          <h3>~EXPERIENCE~</h3>
+          <p>Worked on various projects spanning over 6-8 months, including internships and freelance work.</p>
+        </div>
+      </div>
+    </section>
 
+    <section id="project" class="section">
+      <h2>Projects</h2>
+      <div class="skills-row">
+        <img src="memory.jpg" alt="Memory Game" class="skill-image">
+        <div class="skill-detail">
+          <h3>Memory Game</h3>
+          <p>Click the button to play the game *Coming Soon*</p>
+        </div>
+      </div>
+      <div class="skills-row reverse">
+        <div class="skill-detail">
+          <h3>Game Space</h3>
+          <p>Includes two games: Stone, Paper, Scissors and Guess the Number *Work in Progress*</p>
+        </div>
+        <img src="gamespace.jpg" alt="Game Space" class="skill-image">
+      </div>
+    </section>
 
-</style>
-    
-<script>
-    /* Get references to DOM elements */
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const body = document.body;
-    const nav = document.querySelector('nav');
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form action="https://getform.io/f/bmddyxna" method="POST" onsubmit="return validateForm()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email ID</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <div id="formStatus"></div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+      <div class="social-menu">
+        <ul>
+          <li><a href="https://github.com/vivekx11" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://instagram.com/vivekx___" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="mailto:viveksawji@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+          <li><a href="https://twitter.com/viveksawji" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
+      <footer>
+        <p>© 2025 Vivek Sawji. All Rights Reserved.</p>
+        <p>Created by Vivek Sawji</p>
+      </footer>
+    </section>
+  </div>
 
-    /* Toggle the navigation menu when the menu toggle button is clicked*/ 
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+  <script>
+    function toggleSidebar(btn) {
+      const sidebar = document.getElementById('sidebar');
+      const icon = document.getElementById('toggleIcon');
+      sidebar.classList.toggle('collapsed');
+      icon.classList.toggle('rotate');
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+      document.body.classList.toggle('dark-mode');
+    }
+
+    function scrollToSection(event, sectionId) {
+      event.preventDefault();
+      document.querySelectorAll('.menu a').forEach(link => link.classList.remove('active'));
+      event.target.closest('a').classList.add('active');
+      const section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      const status = document.getElementById("formStatus");
+
+      if (!name || !email || !message) {
+        status.textContent = "Please fill all fields.";
+        status.style.color = "red";
+        return false;
+      }
+
+      status.textContent = "✅ Message Sent!";
+      status.style.color = "lime";
+
+      setTimeout(() => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        status.textContent = "";
+      }, 2000);
+
+      return true;
+    }
+
+    // Typing Animation for "I AM"
+    const roles = ["Web Developer", "Problem Solver", "Tech Enthusiast"];
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const output = document.getElementById("output");
+
+    function type() {
+      const currentRole = roles[roleIndex];
+      if (isDeleting) {
+        output.textContent = currentRole.substring(0, charIndex--);
+        if (charIndex < 0) {
+          isDeleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+        }
+      } else {
+        output.textContent = currentRole.substring(0, charIndex++);
+        if (charIndex > currentRole.length) {
+          isDeleting = true;
+          charIndex = currentRole.length;
+          setTimeout(type, 1000);
+          return;
+        }
+      }
+      setTimeout(type, isDeleting ? 50 : 100);
+    }
+
+    // Scroll-to-Top Button Click Handler
+    const scrollToTopBtn = document.getElementById("scrollToTop");
+    scrollToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
-    /* Toggle dark mode when the dark mode toggle button is clicked */
-    darkModeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        nav.classList.toggle('dark-mode');
+    // Intersection Observer for Animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.section').forEach(section => {
+      section.classList.add('invisible');
+      observer.observe(section);
     });
 
-    /*Smooth scroll to the corresponding section when a navigation link is clicked */
-    function showSection(sectionId) {
-        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-    }
-    const alphabet = "QWERTYUIOPLKJHGFDSAZXCVBNM";
-    const sentences = [
-        "PYTHON DEVLOPER",
-        "JAVA DEVLOPER",
-        "FRONTEND DEVLOPER",
-        "BACKEND DEVLOPER",
-        "STUDENT"
-    ];
-    let store = "";
-    let delay = 25; // Time delay between each step in milliseconds
-    let eraseDelay = 50; // Time delay for erasing each character
-
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
-
-    async function matchLetter(targetLetter) {
-        let outputDiv = document.getElementById('output');
-
-        for (let i = 0; i < alphabet.length; i++) {
-            await sleep(delay); // Add delay for each step
-            outputDiv.innerText = store + alphabet[i]; // Show the current letter being checked
-            
-            if (alphabet[i] === targetLetter) {
-                store += alphabet[i]; // Add the correct letter to store
-                break; // Stop the loop once the correct letter is found
-            }
-        }
-    }
-   /*// Example to show the output after content is ready
-const outputElement = document.querySelector('.output');
-
-// Add content dynamically
-outputElement.textContent = "";
-
-// After content is set, make it visible and trigger the animation
-outputElement.classList.add('show');*/
-
-
-    async function startSentence(sentence) {
-        let outputDiv = document.getElementById('output');
-
-        for (let i = 0; i < sentence.length; i++) {
-            if (sentence[i] === " ") {
-                store += " "; // Add space if the target letter is a space
-                outputDiv.innerText = store;
-            } else {
-                await matchLetter(sentence[i]); // Find and display the correct letter
-            }
-        }
-    }
-
-    async function eraseSentence() {
-        let outputDiv = document.getElementById('output');
-        
-        while (store.length > 0) {
-            store = store.slice(0, -1); // Remove the last character
-            outputDiv.innerText = store; // Update the display with the reduced string
-            await sleep(eraseDelay); // Delay to simulate backspace effect
-        }
-    }
-
-    async function startProcess() {
-        let outputDiv = document.getElementById('output');
-        
-        // Go through each sentence
-        for (let sentence of sentences) {
-            store = ""; // Clear the store for the new sentence
-            await startSentence(sentence); // Process the current sentence
-
-            // Delay after completing one sentence before erasing
-            await sleep(1000);
-            await eraseSentence(); // Erase the sentence one letter at a time
-        }
-
-        // Restart the process once all sentences are processed
-        startProcess(); // Recursively call to make it continuous
-    }
-
-    // Automatically start the process when the page loads
-    window.onload = async function() {
-        await startProcess();
+    // Initialize
+    window.onload = () => {
+      type();
     };
-
-    // Show the button after scrolling down 100px
-    window.onscroll = function () {
-                    const scrollToTopButton = document.getElementById("scrollToTop");
-                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                      scrollToTopButton.style.display = "flex"; // Use "flex" for proper alignment
-                    } else {
-                      scrollToTopButton.style.display = "none";
-                    }
-                  };
-                  
-                  // Scroll to top when the button is clicked
-                  document.getElementById("scrollToTop").onclick = function () {
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                  };
-                  document.getElementById("game-space-btn").addEventListener("click", function() {
-                window.location.href = "https://vivekx11.github.io/GameSpace/";  // Replace with your URL
-              });
-              document.getElementById("game-space-btn").addEventListener("click", function() {
-    window.location.href = "https://viveks2907.github.io/WT.frontend./";  // Replace with your URL
-  });
-  document.getElementById("game-space-btn").addEventListener("click", function() {
-    window.location.href = "https://vivekx11.github.io/memorygame/";  // Replace with your URL
-  });
-
-</script>
+  </script>
+</body>
 </html>
