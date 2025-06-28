@@ -205,8 +205,8 @@
     }
 
     section.section {
-      padding: 60px 20px;
-      min-height: 100vh;
+      padding: 30px 20px; /* Reduced padding to decrease section height */
+      min-height: auto; /* Allow sections to be shorter */
       transition: background 0.4s ease;
       width: 100%;
       max-width: 1200px;
@@ -251,12 +251,28 @@
 
     .section p {
       font-size: 1.2rem;
-      margin-bottom: 1rem;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      line-height: 1.4;
       color: #555;
     }
 
     body.dark-mode .section p {
       color: #ccc;
+    }
+
+    h3, h4, h5 {
+      margin-top: 8px;
+      margin-bottom: 4px;
+    }
+
+    .section-title {
+      margin-bottom: 6px;
+    }
+
+    .section-content {
+      margin-bottom: 10px;
+      line-height: 1.4;
     }
 
     /* Home Section */
@@ -320,7 +336,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 10px; /* Reduced margin */
     }
 
     .skills-row.reverse {
@@ -609,43 +625,45 @@
 
   <div class="content">
     <section id="home" class="section">
-      <h1><span style="color: #2196F3;">'HEY,👋ITS'<br>"VIVEK SAWJI"</span></h1>
-      <img src="teacher-man-avatar-icon-illustration-vector-style_131965-958.avif" alt="Profile Photo">
-      <h3>I AM</h3>
-      <div class="output" id="output"></div>
-      <div class="welcome-message">
-        <h2>"WELCOME"</h2>
-        <h4>
-          <p>~"I'm passionate about turning ideas into reality through code". Let's build something amazing together!~</p>
-        </h4>
-      </div>
-      <div class="thought">
-        <h4>
-          <i>"Code is like humor. When you have to explain it, it’s bad."</i><br>
-          <p>- Cory House</p>
-        </h4>
-      </div>
-      <div class="specialties">
-        <h2>"Skills"</h2>
-        <div id="github">
-          <img src="python-svgrepo-com.svg" alt="Python">
-          <img src="java-4-logo-svgrepo-com.svg" alt="Java">
-          <img src="c-logo-svgrepo-com.svg" alt="C++">
-          <img src="html-5-logo-svgrepo-com.svg" alt="HTML">
-          <img src="css3-logo-svgrepo-com.svg" alt="CSS">
-          <img src="javascript-logo-svgrepo-com.svg" alt="JavaScript">
-          <img src="mysql-logo-svgrepo-com.svg" alt="SQL">
-          <img src="kotlin-1-logo-svgrepo-com.svg" alt="Kotlin">
-          <img src="nodejs-1-logo-svgrepo-com.svg" alt="Node.js">
-          <img src="php-logo-svgrepo-com.svg" alt="PHP">
-          <img src="react-logo-svgrepo-com.svg" alt="React">
+      <h1 class="section-title"><span style="color: #2196F3;">'HEY,👋ITS'<br>"VIVEK SAWJI"</span></h1>
+      <div class="section-content">
+        <img src="teacher-man-avatar-icon-illustration-vector-style_131965-958.avif" alt="Profile Photo">
+        <h3>I AM</h3>
+        <div class="output" id="output"></div>
+        <div class="welcome-message">
+          <h2 class="section-title">"WELCOME"</h2>
+          <h4>
+            <p>~"I'm passionate about turning ideas into reality through code". Let's build something amazing together!~</p>
+          </h4>
         </div>
-        <h2>"Tools/Editors"</h2>
-        <div>
-          <img src="intellij-idea-svgrepo-com.svg" alt="IntelliJ">
-          <img src="visual-studio-code-logo-svgrepo-com.svg" alt="VS Code">
-          <img src="github-icon-1-logo-svgrepo-com.svg" alt="GitHub">
-          <img src="icons8-android-studio.svg" alt="Android Studio">
+        <div class="thought">
+          <h4>
+            <i>"Code is like humor. When you have to explain it, it’s bad."</i><br>
+            <p>- Cory House</p>
+          </h4>
+        </div>
+        <div class="specialties">
+          <h2 class="section-title">"Skills"</h2>
+          <div id="github">
+            <img src="python-svgrepo-com.svg" alt="Python">
+            <img src="java-4-logo-svgrepo-com.svg" alt="Java">
+            <img src="c-logo-svgrepo-com.svg" alt="C++">
+            <img src="html-5-logo-svgrepo-com.svg" alt="HTML">
+            <img src="css3-logo-svgrepo-com.svg" alt="CSS">
+            <img src="javascript-logo-svgrepo-com.svg" alt="JavaScript">
+            <img src="mysql-logo-svgrepo-com.svg" alt="SQL">
+            <img src="kotlin-1-logo-svgrepo-com.svg" alt="Kotlin">
+            <img src="nodejs-1-logo-svgrepo-com.svg" alt="Node.js">
+            <img src="php-logo-svgrepo-com.svg" alt="PHP">
+            <img src="react-logo-svgrepo-com.svg" alt="React">
+          </div>
+          <h2 class="section-title">"Tools/Editors"</h2>
+          <div>
+            <img src="intellij-idea-svgrepo-com.svg" alt="IntelliJ">
+            <img src="visual-studio-code-logo-svgrepo-com.svg" alt="VS Code">
+            <img src="github-icon-1-logo-svgrepo-com.svg" alt="GitHub">
+            <img src="icons8-android-studio.svg" alt="Android Studio">
+          </div>
         </div>
       </div>
       <button class="Btn" id="scrollToTop" aria-label="Scroll to Top">
@@ -657,66 +675,72 @@
     </section>
 
     <section id="about" class="section">
-      <h2>About Me</h2>
-      <div class="about-container">
-        <div class="about-text">
-          <h3>~INTRODUCTION~</h3>
-          <p>I am Vivek Sawji, a dedicated and passionate developer with a keen interest in creating efficient and scalable solutions. With a strong foundation in computer science, I continuously strive to expand my knowledge and skills.</p>
-          <h3>~PROFESSIONAL DETAILS~</h3>
-          <p>I have experience in developing web applications using modern technologies and frameworks. My expertise lies in backend development, but I am also proficient in frontend technologies, enabling me to build full-stack applications.</p>
-          <h3>~PERSONAL DETAILS~</h3>
-          <p>Outside of coding, I enjoy playing games, traveling, and exploring new technologies. I believe in lifelong learning and am always eager to take on new challenges.</p>
-          <h3>~EDUCATION~</h3>
-          <p>Bachelor of Science in Computer Science - Mumbai University</p>
-          <h3>~EXPERIENCE~</h3>
-          <p>Worked on various projects spanning over 6-8 months, including internships and freelance work.</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-content">
+        <div class="about-container">
+          <div class="about-text">
+            <h3>~INTRODUCTION~</h3>
+            <p>I am Vivek Sawji, a dedicated and passionate developer with a keen interest in creating efficient and scalable solutions. With a strong foundation in computer science, I continuously strive to expand my knowledge and skills.</p>
+            <h3>~PROFESSIONAL DETAILS~</h3>
+            <p>I have experience in developing web applications using modern technologies and frameworks. My expertise lies in backend development, but I am also proficient in frontend technologies, enabling me to build full-stack applications.</p>
+            <h3>~PERSONAL DETAILS~</h3>
+            <p>Outside of coding, I enjoy playing games, traveling, and exploring new technologies. I believe in lifelong learning and am always eager to take on new challenges.</p>
+            <h3>~EDUCATION~</h3>
+            <p>Bachelor of Science in Computer Science - Mumbai University</p>
+            <h3>~EXPERIENCE~</h3>
+            <p>Worked on various projects spanning over 6-8 months, including internships and freelance work.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="project" class="section">
-      <h2>Projects</h2>
-      <div class="skills-row">
-        <img src="memory.jpg" alt="Memory Game" class="skill-image">
-        <div class="skill-detail">
-          <h3>Memory Game</h3>
-          <p>Click the button to play the game *Coming Soon*</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-content">
+        <div class="skills-row">
+          <img src="memory.jpg" alt="Memory Game" class="skill-image">
+          <div class="skill-detail">
+            <h3>Memory Game</h3>
+            <p>Click the button to play the game *Coming Soon*</p>
+          </div>
         </div>
-      </div>
-      <div class="skills-row reverse">
-        <div class="skill-detail">
-          <h3>Game Space</h3>
-          <p>Includes two games: Stone, Paper, Scissors and Guess the Number *Work in Progress*</p>
+        <div class="skills-row reverse">
+          <div class="skill-detail">
+            <h3>Game Space</h3>
+            <p>Includes two games: Stone, Paper, Scissors and Guess the Number *Work in Progress*</p>
+          </div>
+          <img src="gamespace.jpg" alt="Game Space" class="skill-image">
         </div>
-        <img src="gamespace.jpg" alt="Game Space" class="skill-image">
       </div>
     </section>
 
     <section id="contact" class="section">
-      <h2>Contact Me</h2>
-      <form action="https://getform.io/f/bmddyxna" method="POST" onsubmit="return validateForm()">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-        <label for="email">Email ID</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" required></textarea>
-        <div id="formStatus"></div>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-      </form>
-      <div class="social-menu">
-        <ul>
-          <li><a href="https://github.com/vivekx11" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://instagram.com/vivekx___" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="mailto:viveksawji@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
-          <li><a href="https://twitter.com/viveksawji" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-        </ul>
+      <h2 class="section-title">Contact Me</h2>
+      <div class="section-content">
+        <form action="https://getform.io/f/bmddyxna" method="POST" onsubmit="return validateForm()">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email ID</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <div id="formStatus"></div>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </form>
+        <div class="social-menu">
+          <ul>
+            <li><a href="https://github.com/vivekx11" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://instagram.com/vivekx___" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="mailto:viveksawji@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://twitter.com/viveksawji" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        <footer>
+          <p>© 2025 Vivek Sawji. All Rights Reserved.</p>
+          <p>Created by Vivek Sawji</p>
+        </footer>
       </div>
-      <footer>
-        <p>© 2025 Vivek Sawji. All Rights Reserved.</p>
-        <p>Created by Vivek Sawji</p>
-      </footer>
     </section>
   </div>
 
