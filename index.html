@@ -210,6 +210,23 @@
       transition: background 0.4s ease;
       width: 100%;
       max-width: 1200px;
+      position: relative;
+    }
+
+    section.section::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      width: 80%;
+      height: 3px;
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    body.dark-mode section.section::after {
+      background: linear-gradient(90deg, #bb86fc, #03a9f4);
     }
 
     .greeting {
@@ -467,7 +484,7 @@
       bottom: 20px;
       right: 20px;
       border: none;
-      z-index: 2000; /* Increased z-index to ensure visibility */
+      z-index: 2000;
       animation: pulse 2s infinite ease-in-out;
     }
 
@@ -548,6 +565,11 @@
 
       .skill-image, .skill-detail {
         width: 100%;
+      }
+
+      section.section::after {
+        left: 5%;
+        width: 90%;
       }
     }
 
