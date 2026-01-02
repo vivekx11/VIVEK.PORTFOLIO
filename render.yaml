@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: vivek-portfolio
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+    routes:
+      - path: /<path:\.*>
+        methods:
+          - GET
+        handler:
+          runtime: nodejs
+          targets:
+            - staticPath: /dist
